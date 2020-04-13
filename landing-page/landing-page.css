@@ -1,0 +1,123 @@
+/* [Start] css reset */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* [End] css reset */
+
+.landing-page__section {
+  width: 100vw;
+}
+
+.landing-page__hero {
+  background-color: green;
+}
+
+.landing-page__hero__container {
+  height: 400px;
+  width: 100%;
+  margin-top: 83px;
+}
+
+@media(min-width: 900px) {
+  .landing-page__hero__container {
+    height: 800px;
+  }
+}
+
+.landing-page__placeholder-text {
+  font-size: 90px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.landing-page__in-this-issue {
+  background-color: red;
+  height: 100%;
+}
+
+.landing-page__in-this-issue__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media(min-width: 900px) {
+  .landing-page__in-this-issue__container {
+    /* flex-direction: row; */
+  }
+}
+
+.landing-page__content-blocks {
+  height: 100%;
+  padding: 95px 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.landing-page__content-block {
+  height: min-content;
+  width: 100%;
+  background-color: gray;
+}
+
+@media(min-width: 900px) {
+  .landing-page__content-block {
+    width: 50%;
+  }
+}
+
+.landing-page__content-block__title {
+  text-align: center;
+}
+
+.landing-page__content-block__link {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.landing-page__content-block__image-wrapper {
+  height: 400px;
+  width: 95%;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+.landing-page__in-this-issue__match-day {
+  width: 100%;
+  padding: 160px 0;
+}
+
+.landing-page__in-this-issue__match-day__container {
+  height: 800px;
+  background-color: pink;
+}
