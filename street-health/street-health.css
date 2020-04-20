@@ -1,64 +1,106 @@
 /* [Start] css reset */
-html, body,
-h1, h2, h3, h4, h5, h6,
-a, p, span,
-em, small, strong,
-sub, sup,
-mark, del, ins, strike,
-abbr, dfn,
-blockquote, q, cite,
-code, pre,
-ol, ul, li, dl, dt, dd,
-div, section, article,
-main, aside, nav,
-header, hgroup, footer,
-img, figure, figcaption,
-address, time,
-audio, video,
-canvas, iframe,
-details, summary,
-fieldset, form, label, legend,
-table, caption,
-tbody, tfoot, thead,
-tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 /* [End] css reset */
 
-.street-health__background-image--one, .street-health__background-image--two, .street-health__background-image--three {
+.street-health__background-image--one,
+.street-health__background-image--two,
+.street-health__background-image--three {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .street-health__background-image--one {
-  background-image: url(https://www.evms.edu/alumni/match_day_2020/match-day-image-1.jpg);
-  min-height: 100%;
+  background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
+  min-height: 500px;
   padding-top: 60%;
 }
 
 .street-health__background-image--two {
-  background-image: url(https://www.evms.edu/alumni/match_day_2020/match-day-image-2.jpg);
+  background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
   min-height: 700px;
 }
 
 .street-health__background-image--three {
-  background-image: url(https://www.evms.edu/alumni/match_day_2020/match-day-image-3.jpg);
+  background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
   height: 900px;
 }
 
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+.street-health__background-image__caption {
+  color: white;
+  text-align: right;
+  font-size: 20px;
+  padding-bottom: 100px;
 }
 
 .caption span.border {
@@ -78,7 +120,233 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .street-health__background-image--one, .street-health__background-image--two, .street-health__background-image--three {
-    /* background-attachment: scroll; */
+  .street-health__background-image--one,
+  .street-health__background-image--two,
+  .street-health__background-image--three {
+    background-attachment: scroll;
   }
+}
+.street-health__intro__p, .street-health__qoute__p {
+
+}
+
+.street-health__section__block-two {
+  background-color: white;
+  height: auto;
+}
+
+.street-health__qoute {
+  background-color: orange;
+  height: auto;
+  
+}
+
+.street-health__qoute__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 100px 0;
+}
+
+.street-health__qoute__image-wrapper {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 50%;
+}
+.street-health__qoute__copy {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  font-size: 80px;
+  color: white;
+}
+
+.landing-page__more-stories__carousel__labels {
+  width: auto;
+  position: relative;
+  top: 30%;
+  margin: 0 auto;
+  text-align: center;
+  animation: 1s fadeIn;
+}
+
+.landing-page__more-stories__carousel__label__category {
+  font-size: 32px;
+  color: #cc6434;
+  border-bottom: 2px solid lightgray;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+  .landing-page__more-stories__carousel__label__category {
+    padding-top: 0;
+    padding-bottom: 10px;
+    font-size: 52px;
+  }
+}
+
+.landing-page__more-stories__carousel__label__title {
+  font-size: 49px;
+  padding-top: 20px;
+  color: #1f7f9b;
+  transition: 0.5s ease;
+}
+
+@media (min-width: 900px) {
+  .landing-page__more-stories__carousel__label__title {
+    margin-top: -60px;
+    padding-top: 0;
+  }
+}
+
+.landing-page__more-stories__carousel__label__title:hover {
+  color: #cc6434;
+  /* border-bottom: 2px solid #cc6434; */
+}
+
+/*! For Carousel - make less hacky */
+
+#slider {
+  /* position: relative; */
+  width: 200px;
+  height: 300px;
+  margin: 50px auto 0;
+  font-family: "Helvetica Neue", sans-serif;
+  perspective: 900px;
+  transform-style: preserve-3d;
+}
+
+@media (min-width: 900px) {
+  #slider {
+    position: relative;
+    width: 700px;
+    height: 900px;
+    margin: 75px auto 90px;
+    perspective: 1440px;
+  }
+}
+
+#slider img {
+  width: 100%;
+  height: 100%;
+}
+
+input[type="radio"] {
+  position: relative;
+  top: 1108%;
+  left: 64%;
+  width: 18px;
+  height: 18px;
+  margin: 0 auto;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+  display: none;
+}
+
+input[type="radio"]:nth-child(5) {
+  margin-right: 0px;
+}
+
+input[type="radio"]:checked {
+  opacity: 1;
+}
+
+#slider label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 400ms ease;
+}
+
+#slide1 {
+  /* background: tomato; */
+}
+
+#slide2 {
+  /* background: yellowgreen; */
+}
+
+#slide3 {
+  /* background: dodgerblue; */
+}
+
+/* #slide4 {
+  background: slateblue;
+}
+
+#slide5 {
+  background: violet;
+} */
+
+/* Active Slide */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0%, 0, 0px);
+  z-index: 5;
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(75%, 0, -400px);
+}
+
+/* show slide 3 on the left of 1 when 1 is active */
+#s1:checked ~ #slide3 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-75%, 0, -400px);
+}
+
+/* Next to Next Slide */
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(30%, 0, -450px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  transform: translate3d(75%, 0, -450px);
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-75%, 0, -400px);
 }
