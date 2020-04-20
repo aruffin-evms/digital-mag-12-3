@@ -162,8 +162,9 @@ h3 {
   flex-direction: column;
   text-align: center;
   align-self: center;
-  font-size: 80px;
+  font-size: 50px;
   color: white;
+  width: 40%;
 }
 
 .landing-page__more-stories__carousel__labels {
