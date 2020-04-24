@@ -70,52 +70,61 @@ td {
 }
 /* [End] css reset */
 
+html {
+  scroll-behavior: smooth;
+}
+/* for qoute backgrounds */
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* set z-index for sections */
+.street-health__section__block-one,
+.street-health__section__block-two,
+.street-health__section__block-three {
+  z-index: 3;
+}
+
 .street-health__background-image--one,
 .street-health__background-image--two,
 .street-health__background-image--three {
   position: relative;
-  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 .street-health__background-image--one {
   background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
-  min-height: 500px;
-  padding-top: 60%;
+  min-height: 90vh;
+  padding-top: 30%;
 }
 
 .street-health__background-image--two {
-  background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
-  min-height: 700px;
+  background-image: url(../12.3/assets/street-health/Lusher_200125_0873@2x.jpg);
+  min-height: 90vh;
 }
 
-.street-health__background-image--three {
+/* .street-health__background-image--three {
   background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
   height: 900px;
-}
+} */
 
 .street-health__background-image__caption {
   color: white;
   text-align: right;
   font-size: 20px;
   padding-bottom: 100px;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+  position: fixed;
+  top: 70%;
+  z-index: 0;
+  right: 10%;
+  max-width: 600px;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -126,8 +135,86 @@ h3 {
     background-attachment: scroll;
   }
 }
-.street-health__intro__p, .street-health__qoute__p {
 
+.street-health__hero {
+  height: 90vh;
+  width: 100vw;
+  padding-top: 50px;
+}
+
+.street-health__hero-video {
+  background-image: url(../12.3/assets/street-health/video-still-hero@2x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.street-health__intro {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(248, 248, 248, .95)), url(../12.3/assets/street-health/map-bg-white.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.street-health__intro__title,
+.street-health__intro__subtitle,
+.street-health__intro__copy {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.street-health__first-letter {
+  color: #cc6434;
+  float: left;
+  font-size: 176px;
+  line-height: 116px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  padding-bottom: 37px;
+  border-bottom: 2px solid gray;
+  width: auto;
+  margin: 0px 20px 0 0;
+}
+
+.street-health__intro__title {
+  font-size: 60px;
+  color: #cc6434;
+  padding-top: 150px;
+}
+
+@media(min-width: 900px) {
+  .street-health__intro__title {
+    font-size: 120px !important;
+  }
+}
+
+.street-health__intro__subtitle {
+
+}
+
+
+@media(min-width: 900px) {
+  .street-health__intro__subtitle {
+    font-size: 40px;
+  }
+}
+
+.street-health__intro__p, .street-health__qoute-section__p {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+@media(min-width: 900px) {
+  .street-health__intro__p, .street-health__qoute-section__p {
+    font-size: 22px;
+  }
+}
+.street-health__intro__copy, 
+.street-health__qoute-section__copy {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .street-health__section__block-two {
@@ -136,27 +223,39 @@ h3 {
 }
 
 .street-health__qoute {
-  background-color: orange;
-  height: auto;
-  
+  background-color: #cc6434;
+  height: 500px;
+  width: 100vw;
+  background-image: url(../12.3/assets/street-health/map-bg-rust.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: relative;
 }
 
 .street-health__qoute__container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 100px 0;
+  align-content: center;
+}
+
+@media(min-width: 1800px) {
+  .street-health__qoute__container {
+    width: 50%;
+  }
 }
 
 .street-health__qoute__image-wrapper {
   height: 400px;
   width: 400px;
-  background-color: white;
   border-radius: 50%;
 }
+
 .street-health__qoute__copy {
   display: flex;
   flex-direction: column;
@@ -164,7 +263,24 @@ h3 {
   align-self: center;
   font-size: 50px;
   color: white;
-  width: 40%;
+  width: 51%;
+}
+
+.street-health__qoute__text {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.street-health__qoute__divider {
+  border-bottom: solid 5px white;
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.street-health__qoute__source {
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .landing-page__more-stories__carousel__labels {
@@ -235,7 +351,7 @@ h3 {
 
 #slider img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 input[type="radio"] {
@@ -348,6 +464,148 @@ input[type="radio"]:checked {
 #s3:checked ~ #slide2,
 #s4:checked ~ #slide3,
 #s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-75%, 0, -400px);
+}
+
+/* second carousel */
+/*! For Carousel - make less hacky */
+
+#slider2 {
+  /* position: relative; */
+  width: 200px;
+  height: 300px;
+  margin: 50px auto 0;
+  font-family: "Helvetica Neue", sans-serif;
+  perspective: 900px;
+  transform-style: preserve-3d;
+}
+
+@media (min-width: 900px) {
+  #slider2 {
+    position: relative;
+    width: 700px;
+    height: 900px;
+    margin: 75px auto 90px;
+    perspective: 1440px;
+  }
+}
+
+#slider2 img {
+  width: 100%;
+  height: auto;
+}
+
+input[type="radio"] {
+  position: relative;
+  top: 1108%;
+  left: 64%;
+  width: 18px;
+  height: 18px;
+  margin: 0 auto;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+  display: none;
+}
+
+input[type="radio"]:nth-child(5) {
+  margin-right: 0px;
+}
+
+input[type="radio"]:checked {
+  opacity: 1;
+}
+
+#slider2 label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 400ms ease;
+}
+
+#slide1_2 {
+  /* background: tomato; */
+}
+
+#slide2_2 {
+  /* background: yellowgreen; */
+}
+
+#slide3_2 {
+  /* background: dodgerblue; */
+}
+
+/* #slide4 {
+  background: slateblue;
+}
+
+#slide5 {
+  background: violet;
+} */
+
+/* Active Slide */
+#s1_2:checked ~ #slide1_2,
+#s2_2:checked ~ #slide2_2,
+#s3_2:checked ~ #slide3_2,
+#s4_2:checked ~ #slide4_2,
+#s5_2:checked ~ #slide5_2 {
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0%, 0, 0px);
+  z-index: 5;
+}
+
+/* Next Slide */
+#s1_2:checked ~ #slide2_2,
+#s2_2:checked ~ #slide3_2,
+#s3_2:checked ~ #slide4_2,
+#s4_2:checked ~ #slide5_2,
+#s5_2:checked ~ #slide1_2 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(75%, 0, -400px);
+}
+
+/* show slide 3 on the left of 1 when 1 is active */
+#s1_2:checked ~ #slide3_2 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-75%, 0, -400px);
+}
+
+/* Next to Next Slide */
+#s2_2:checked ~ #slide4_2,
+#s3_2:checked ~ #slide5_2,
+#s4_2:checked ~ #slide1_2,
+#s5_2:checked ~ #slide2_2 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(30%, 0, -450px);
+}
+
+/* Previous to Previous Slide */
+#s1_2:checked ~ #slide4_2,
+#s2_2:checked ~ #slide5_2,
+#s3_2:checked ~ #slide1_2,
+#s4_2:checked ~ #slide2_2,
+#s5_2:checked ~ #slide3_2 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  transform: translate3d(75%, 0, -450px);
+}
+
+/* Previous Slide */
+#s1_2:checked ~ #slide5_2,
+#s2_2:checked ~ #slide1_2,
+#s3_2:checked ~ #slide2_2,
+#s4_2:checked ~ #slide3_2,
+#s5_2:checked ~ #slide4_2 {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   transform: translate3d(-75%, 0, -400px);
 }

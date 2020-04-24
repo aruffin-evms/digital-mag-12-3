@@ -8,17 +8,17 @@ const slide3 = document.getElementById("s3");
 const stories = {
   storyOne: {
     category: "",
-    title: "Title 1",
+    title: "Alumni Title",
     link: ""
   },
   storyTwo: {
     category: "",
-    title: "Title 2",
+    title: "Behind bench title",
     link: ""
   },
   storyThree: {
     category: "",
-    title: "Title 3",
+    title: "Comics title",
     link: ""
   }
 };
