@@ -100,20 +100,20 @@ svg {
   z-index: -1;
 }
 .street-health__background-image--one {
-  background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
+  background-image: url(../12.3/assets/street-health/Lusher_200125_0323@2x.jpg);
   min-height: 90vh;
   padding-top: 30%;
 }
 
 .street-health__background-image--two {
-  background-image: url(../12.3/assets/street-health/Lusher_200125_0873@2x.jpg);
+  background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
   min-height: 90vh;
 }
 
-/* .street-health__background-image--three {
-  background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
-  height: 900px;
-} */
+.street-health__background-image--three {
+  background-image: url(../12.3/assets/street-health/Lusher_200125_0873@2x.jpg);
+  min-height: 90vh;
+}
 
 .street-health__background-image__caption {
   color: white;
@@ -418,7 +418,7 @@ input[type="radio"]:checked {
 #s3:checked ~ #slide3,
 #s4:checked ~ #slide4,
 #s5:checked ~ #slide5 {
-  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
   transform: translate3d(0%, 0, 0px);
   z-index: 5;
 }
@@ -429,13 +429,13 @@ input[type="radio"]:checked {
 #s3:checked ~ #slide4,
 #s4:checked ~ #slide5,
 #s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   transform: translate3d(75%, 0, -400px);
 }
 
 /* show slide 3 on the left of 1 when 1 is active */
 #s1:checked ~ #slide3 {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   transform: translate3d(-75%, 0, -400px);
 }
 
@@ -454,7 +454,7 @@ input[type="radio"]:checked {
 #s3:checked ~ #slide1,
 #s4:checked ~ #slide2,
 #s5:checked ~ #slide3 {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.4);
   transform: translate3d(75%, 0, -450px);
 }
 
@@ -464,7 +464,7 @@ input[type="radio"]:checked {
 #s3:checked ~ #slide2,
 #s4:checked ~ #slide3,
 #s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   transform: translate3d(-75%, 0, -400px);
 }
 
@@ -560,7 +560,7 @@ input[type="radio"]:checked {
 #s3_2:checked ~ #slide3_2,
 #s4_2:checked ~ #slide4_2,
 #s5_2:checked ~ #slide5_2 {
-  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
   transform: translate3d(0%, 0, 0px);
   z-index: 5;
 }
@@ -571,13 +571,13 @@ input[type="radio"]:checked {
 #s3_2:checked ~ #slide4_2,
 #s4_2:checked ~ #slide5_2,
 #s5_2:checked ~ #slide1_2 {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   transform: translate3d(75%, 0, -400px);
 }
 
 /* show slide 3 on the left of 1 when 1 is active */
 #s1_2:checked ~ #slide3_2 {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   transform: translate3d(-75%, 0, -400px);
 }
 
@@ -586,7 +586,7 @@ input[type="radio"]:checked {
 #s3_2:checked ~ #slide5_2,
 #s4_2:checked ~ #slide1_2,
 #s5_2:checked ~ #slide2_2 {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.4);
   transform: translate3d(30%, 0, -450px);
 }
 
@@ -596,7 +596,7 @@ input[type="radio"]:checked {
 #s3_2:checked ~ #slide1_2,
 #s4_2:checked ~ #slide2_2,
 #s5_2:checked ~ #slide3_2 {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.4);
   transform: translate3d(75%, 0, -450px);
 }
 
@@ -606,6 +606,6 @@ input[type="radio"]:checked {
 #s3_2:checked ~ #slide2_2,
 #s4_2:checked ~ #slide3_2,
 #s5_2:checked ~ #slide4_2 {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 90px 90px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   transform: translate3d(-75%, 0, -400px);
 }

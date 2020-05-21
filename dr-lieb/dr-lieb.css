@@ -1,0 +1,146 @@
+/* [Start] css reset */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* [End] css reset */
+
+body {
+  font-family: myriad-pro,myriad,sans-serif;
+}
+
+.dr-lieb__hero {
+  
+}
+
+.dr-lieb__hero__image {
+  height: 80vh;
+  object-fit: cover;
+  width: 100vw;
+}
+.dr-lieb__copy {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.dr-lieb__p {
+  padding: 20px 0;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.dr-lieb__title {
+  font-size: 70px;
+  padding: 60px 0 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.dr-lieb__subtitle {
+  font-size: 22px;
+  padding: 20px 0 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.dr-lieb__pull-qoute {
+  display: flex;
+  height: min-content;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.dr-lieb__pull-qoute---vertical {
+  flex-direction: column;
+  /* width: 700px;
+  margin: 0 auto; */
+}
+
+.dr-lieb__pull-qoute__image-wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.dr-lieb__pull-qoute__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dr-lieb__pull-qoute__image--vertical {
+  height: 700px;
+  width: 500px;
+}
+
+.dr-lieb__pull-qoute__image--horizontal {
+  /* width: 700px; */
+  height: 604px;
+width: 900px;
+margin: 0 auto;
+display: flex;
+}
+
+.dr-lieb__graphic-caption {
+  display: flex;
+  
+}
+
+.dr-lieb__graphic-caption--horizontal {
+  flex-direction: row;
+  height: 300px;
+}
+
+.dr-lieb__graphic-caption--vertical {
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+
+.dr-lieb__graphic-caption__graphic {
+  height: 400px;
+  min-width: 600px;
+  position: relative;
+  z-index: 5;
+}
+
+.dr-lieb__graphic-caption__graphic--horizontal {
+  top: -100px;
+  left: 90px;
+}
+
+.dr-lieb__graphic-caption__graphic--vertical {
+  right: 200px;
+}
+
+.dr-lieb__graphic-caption__caption {
+  font-size: 32px;
+  line-height: 42px;
+  display: flex;
+  justify-self: center;
+  /* align-self: center; */
+}
