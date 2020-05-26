@@ -41,12 +41,6 @@ body {
   width: 100vw;
   background-color: gray;
 }
-
-.story-template__hero__image {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
 .story-template__hero p {
   font-size: 74px;
   color: white;
@@ -72,16 +66,10 @@ body {
 
 .image__float-right {
   float: right;
-  margin-left: 20px;
-  height: 350px;
-  padding-top: 20px;
 }
 
 .image__float-left {
   float: left;
-  margin-right: 20px;
-  height: 350px;
-  padding-top: 20px;
 }
 
 .story-template__image{
@@ -106,7 +94,7 @@ body {
   margin: 0 auto;
   font-size: 40px;
   line-height: 55px;
-  padding: 30px 0 15px;
+  padding: 30px 0;
 }
 
 .story-template__pull-qoute__divider {
@@ -116,7 +104,6 @@ body {
 .story-template__pull-qoute__source {
   text-align: center;
   font-weight: 800;
-  padding-top: 15px
 }
 
 .story-template__copy {
@@ -124,7 +111,7 @@ body {
   margin: 0 auto;
   width: 90%;
   max-width: 1440px;
-  /* line-height: 30px; */
+  line-height: 30px;
 }
 @media (min-width: 600px) {
   .story-template__copy {
@@ -137,9 +124,8 @@ body {
   }
 }
 
-.story-template__copy p {
+.story-template__p {
   padding: 10px 0;
-  line-height: 30px;
 }
 
 .story-template__subtitle {
@@ -149,8 +135,6 @@ body {
 
 .story-template__headline {
   padding-top: 40px;
-  color: #1f7f9b;
-  padding-bottom: 40px;
 }
 
 .story-template__qoute {
@@ -241,6 +225,7 @@ body {
 }
 
 .story-template__image-w-caption__image {
+  background-color: gray;
   height: 400px;
   width: 90%;
   margin: 0 auto;
@@ -248,7 +233,6 @@ body {
 @media (min-width: 1200px) {
   .story-template__image-w-caption__image {
     width: 70%;
-    height: auto;
   }
 }
 .story-template__image-w-caption__image p {
@@ -260,9 +244,6 @@ body {
   position: relative;
 }
 
-.story-template__image-w-caption__image img {
-  width: 100%;
-}
 .story-template__image-w-caption__caption {
   font-size: 18px;
   width: 90%;

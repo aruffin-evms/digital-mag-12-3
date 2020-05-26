@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digital Stories Template</title>
+  <link rel="stylesheet" href="story-template.css">
+  <link rel="stylesheet" href="https://use.typekit.net/icp2dlp.css">
+  <link rel="stylesheet" href="https://use.typekit.net/adg6qdm.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cpw7myx.css">
+  <link rel="stylesheet" href="https://use.typekit.net/yjc7jjv.css"> <!-- 11.2 Fonts -->
+  <style>
+    /* strip out default browser padding */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .croppedHeroImage {
+      width: 100vw; /* width of container */
+      height: 90vh; /* height of container */
+      object-fit: cover;
+      object-position: 0% 0px;
+    }
+    .croppedFeatureImage{
+      width: 100%; /* width of container */
+      height: 400px; /* height of container */
+      object-fit: cover;
+      object-position: 55% 0px;      
+    }
+    .croppedCalloutImage{
+      width: 100%; /* width of container */
+      height: 100%; /* height of container */
+      object-fit:cover;
+      object-position: 88% 0px;
+    }
+    .chowPullQuoteSection{
+      padding-top: 0px;
+      padding-bottom: 60px;
+    }
+    .chowPullQuote{
+      line-height: 2.2;
+      margin-right:0px;
+      margin-left:0px;
+      height:300px;
+      width:275px;
+    }
+    .chowImageWithPullQuote{
+      line-height: 1.5;
+      padding:0px;
+      width:100%;
+      text-align: center;
+    }
+    .chowEVMSquote{
+      padding-top:60px;
+      padding-bottom: 60px;
+    }
+    .centerXY{
+        display:flex;
+        /* align horizontal */
+        justify-content:center;
+        /* align vertical */
+        align-items:center;
+    }
+    .responsiveText{
+      width:100%;
+    }
+    .calloutImageContainer{
+      width:300px;
+      height:300px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="story-template">
+    <section class="story-template__hero">
+      <!-- 2 variations. Hero image or large qoute. For hero image, you can either use an HTML (image tag) or CSS (I will be using this one) -->
+      <!--  Variant 1 -->
+      <!--! Placeholder text: delete below this line -->
+      <img class="croppedHeroImage" src="Chow_2013_Gold_Humanism_Ceremony@2x.jpg">
+      <!-- <p>Placeholder text for Hero</p> -->
+      <!--! Placeholder text: delete above this line -->
+    </section>
+    <section class="story-template__story">
+      <div class="story-template__copy">
+        <h1 class="story-template__headline"></h1>
+        <p>
+           Growing up, Eric Chow, MD, MPH, was fascinated by microbes.
+           Their complex interactions with humans and the environment 
+           offered him a unique understanding of the role they play in medicine. 
+           It was this interest that eventually led him to work in public health with a focus 
+           on infectious diseases.
+        </p>
+        <br>
+        <p>
+           Dr. Chow (MPH ’10, MD ’13) was introduced to EVMS by a medical school
+           counselor while he was an undergraduate student at Stanford University. 
+           After earning two degrees at EVMS, he completed a four-year residency in 
+           combined internal medicine and pediatrics at Brown University, where he also 
+           worked an additional year as the Pediatrics Chief Resident. 
+           But he says it was his public health degree and medical training from EVMS that 
+           sparked his interest in applying for an experiential service fellowship with the 
+           Centers for Disease Control and Prevention in Atlanta.
+        </p>
+      </div>
+    </section>
+    <section class="story-template__story">
+      <div class="story-template__copy chowEVMSquote">
+        <p class="story-template__image-w-qoute__qoute chowImageWithPullQuote">
+          Dr. Chow credits his EVMS experience for contributing to his success so far.
+        </p>
+      </div>
+    </section>
+    <section class="story-template__qoute chowPullQuoteSection">
+      <div class="story-template__qoute__column story-template__qoute__column-left responsiveText centerXY">
+        <p class="story-template__qoute__copy chowPullQuote">
+          “EVMS’ training gave me the firm clinical and epidemiological foundation I needed to get 
+          into a good residency and, now, to be selected for this competitive fellowship. 
+          I’m forever grateful for the education and the support I’ve had from EVMS.” &nbsp;- Dr. Chow
+        </p>
+      </div>
+      <div class="story-template__qoute__column story-template__qoute__column-right">
+        <div class="story-template__qoute__callout-sidebar centerXY calloutImageContainer">
+          <img class="croppedCalloutImage" src="Chow_2013_Gold_Humanism_Ceremony@2x.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="story-template__story">
+      <div class="story-template__copy">
+        <p>
+           Dr. Chow currently works as an Epidemic Intelligence Service Officer in the
+           Influenza Division at the CDC. The two-year program trains medical professionals and 
+           public health scientists to become “disease detectives” where each officer develops skills 
+           in applied epidemiology. In collaboration with local public health officials, 
+           the officers lead and investigate outbreaks of diseases. 
+           These experiences allow them to develop skill sets in interpreting epidemiological analyses and 
+           forging community partnerships to become future public health leaders.
+        </p>
+        <br>
+        <p>
+           While most of his research centers around influenza and other respiratory viral infections, 
+           Dr. Chow co-led both the investigation of the measles outbreak in Rockland County, New York, 
+           and the border health screening efforts as part of the Ebola response team in the 
+           Democratic Republic of the Congo in 2019 with local and international partners.
+        </p>
+      </div>
+    </section>
+    <!--! These sections may be removed at some point. Waiting for designs to determine which variations will be used -->
+    <!--! Class names will have to be replaced/renamed -->
+    <!-- Section with large image, caption, and copy -->
+    <section class="story-template__image-w-caption">
+      <!-- Image is in CSS -->
+      <div class="story-template__image-w-caption__image">
+        <img class="croppedFeatureImage" src="AlumniProfile-Eric Chow-hero@2x.jpg">
+      </div>
+      <div class="story-template__image-w-caption__caption">
+        <p>Dr. Chow with the Ebola Response Team.</p>
+      </div>
+      <div class="story-template__image-w-caption__copy">
+        <p>
+          “I like that I get to work with people from different fields —
+           people whom I would never have been able to work with if I were in the clinical realm,
+           ” Dr. Chow says. “And I like that I have the opportunity to do things that require different 
+           skill sets.”
+        </p>
+      </div>
+    </section>
+    <section class="story-template__story">
+      <div class="story-template__copy">
+        <h1 class="story-template__headline"></h1>
+        <p>
+          In his spare time, Dr. Chow likes to cook and travel with his husband, 
+          who works as a marine biologist. The two traveled to Tasmania this past winter.
+          After Dr. Chow’s fellowship with the CDC wraps up in June, he’ll head to the University 
+          of Washington to be an adult infectious disease fellow. He then plans to jump back into 
+          public health and look for a position as a state Epidemiologist or Chief Medical Officer.
+        </p>
+      </div>
+    </section>
+    <!--! Squeeze images to align with other page content -->
+    <section class="story-template__image-w-qoute">
+      <div class="story-template__image-w-qoute__container">
+        <div class="story-template__image-w-qoute__column story-template__image-w-qoute__column-left">
+          <img class="story-template__image-w-qoute__image"
+            src="../feature-panama/assets/images/SeaScape-video-intro-bg-1920x1080-v2.jpg" alt="" srcset="">
+        </div>
+        <div class="story-template__image-w-qoute__column story-template__image-w-qoute__column-right">
+          <img class="story-template__image-w-qoute__image"
+            src="../feature-panama/assets/images/SeaScape-video-intro-bg-1920x1080-v2.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./story-template.js"></script>
+</body>
+</html>
+
+<!-- <script type="text/javascript" src="//nexus.ensighten.com/choozle/10790/Bootstrap.js"></script> -->

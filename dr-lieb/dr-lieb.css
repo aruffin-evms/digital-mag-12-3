@@ -43,6 +43,7 @@ body {
 .dr-lieb__copy {
   max-width: 1440px;
   margin: 0 auto;
+  width: 90%;
 }
 
 .dr-lieb__p {
@@ -56,6 +57,7 @@ body {
   padding: 60px 0 0;
   max-width: 1440px;
   margin: 0 auto;
+  width: 90%;
 }
 
 .dr-lieb__subtitle {
@@ -63,6 +65,7 @@ body {
   padding: 20px 0 60px;
   max-width: 1440px;
   margin: 0 auto;
+  width: 90%;
 }
 
 .dr-lieb__pull-qoute {
@@ -142,5 +145,5 @@ display: flex;
   line-height: 42px;
   display: flex;
   justify-self: center;
-  /* align-self: center; */
+  padding-left: 30px;
 }
