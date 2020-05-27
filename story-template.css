@@ -39,6 +39,20 @@ body {
   }
 }
 
+a {
+  color: #cc5831;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #000000;
+  text-decoration: underline;
+}
+
 .story-template {
   display: flex;
   flex-direction: column;
