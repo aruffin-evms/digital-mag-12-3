@@ -28,7 +28,15 @@ tr, th, td {
 /* [End] css reset */
 
 body {
-  font-family: myriad-pro,myriad,sans-serif;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media (min-width: 1200px){
+  body {
+    font-size: 18px;
+  }
 }
 
 .story-template {
@@ -37,9 +45,28 @@ body {
 }
 
 .story-template__hero {
-  height: 90vh;
   width: 100vw;
   background-color: gray;
+  margin: 0 auto 30px;
+}
+
+@media (min-width: 600px) and (max-width: 767px){
+  .story-template__hero {
+    height: 80vh;
+}
+}
+
+@media (min-width: 768px){
+  .story-template__hero {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px){
+  .story-template__hero {
+    width: 100vw;
+    height:80vh;
+  }
 }
 
 .story-template__hero__image {
@@ -47,6 +74,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 .story-template__hero p {
   font-size: 74px;
   color: white;
@@ -82,6 +110,41 @@ body {
   margin-right: 20px;
   height: 350px;
   padding-top: 20px;
+}
+
+.headshot {
+  float: none;
+  max-height: 100vh;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .headshot {
+    float: left;
+    padding: 0 15px 15px 0;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .headshot {
+    float: left;
+    padding: 15px 30px 15px 0;
+    margin: 0;
+  }
+}
+
+.headshot-caption {
+  caption-side: bottom;
+  line-height: 1.35em;
+  font-size: 0.95em;
+  color: #616161;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .headshot-caption {
+    text-align: left;
+  }
 }
 
 .story-template__image{
@@ -120,26 +183,19 @@ body {
 }
 
 .story-template__copy {
-  padding: 30px 0 0;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   max-width: 1440px;
-  /* line-height: 30px; */
-}
-@media (min-width: 600px) {
-  .story-template__copy {
-    width: 70%;
-  }
+
 }
 @media (min-width: 1200px) {
   .story-template__copy {
-    width: 70%;
+    min-width: 1200px;
   }
 }
 
 .story-template__copy p {
   padding: 10px 0;
-  line-height: 30px;
 }
 
 .story-template__subtitle {
@@ -148,9 +204,21 @@ body {
 }
 
 .story-template__headline {
-  padding-top: 40px;
   color: #1f7f9b;
-  padding-bottom: 40px;
+  font-size: 1.75em;
+  font-weight: bolder;
+  line-height: 1.25em;
+  padding-bottom: 15px;
+}
+@media (min-width: 600px) {
+  .story-template__headline {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1200px) {
+  .story-template__headline {
+    font-size: 2.25em;
+  }
 }
 
 .story-template__qoute {
@@ -396,7 +464,7 @@ body {
 }
 
 /* The dots/bullets/indicators */
-.story-templae__image-slider__dot {
+.story-template__image-slider__dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -409,6 +477,31 @@ body {
 
 .active, .story-templae__image-slider__dot:hover {
   background-color: #717171;
+}
+
+/* Colors */
+.lightblue{
+  color: #05c3de;
+}
+
+.mainblue{
+  color: #1f7f9b;
+}
+
+.rust{
+  color: #c7531e;
+}
+
+/*screenreader only*/
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /* Fading animation */
