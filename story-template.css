@@ -112,6 +112,41 @@ body {
   padding-top: 20px;
 }
 
+.headshot {
+  float: none;
+  max-height: 100vh;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .headshot {
+    float: left;
+    padding: 0 15px 15px 0;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .headshot {
+    float: left;
+    padding: 15px 30px 15px 0;
+    margin: 0;
+  }
+}
+
+.headshot-caption {
+  caption-side: bottom;
+  line-height: 1.35em;
+  font-size: 0.95em;
+  color: #616161;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .headshot-caption {
+    text-align: left;
+  }
+}
+
 .story-template__image{
   height: 100%;
   width: 100%;
@@ -446,7 +481,7 @@ body {
 
 /* Colors */
 .lightblue{
-  color: #c7531e;
+  color: #05c3de;
 }
 
 .mainblue{
@@ -456,6 +491,19 @@ body {
 .rust{
   color: #c7531e;
 }
+
+/*screenreader only*/
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
