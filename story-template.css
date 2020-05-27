@@ -40,15 +40,19 @@ body {
 
 .story-template__hero {
   width: 100vw;
-  margin-bottom: 30px;
   background-color: gray;
+  margin: 0 auto 30px;
 }
 
 @media (min-width: 600px){
   .story-template__hero {
     width: 80%;
-    margin: 0 auto;
 }
+}
+@media (min-width: 768px){
+  .story-template__hero {
+    width: 100%;
+  }
 }
 
 .story-template__hero__image {
@@ -137,6 +141,11 @@ body {
 @media (min-width: 600px) {
   .story-template__copy {
     width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .story-template__copy {
+    width: 95%;
   }
 }
 @media (min-width: 1200px) {
