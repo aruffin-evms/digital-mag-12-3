@@ -79,7 +79,7 @@ a:focus {
 @media (min-width: 1200px){
   .story-template__hero {
     width: 100vw;
-    height:80vh;
+    height:70vh;
   }
 }
 
@@ -202,11 +202,6 @@ a:focus {
   max-width: 1440px;
 
 }
-@media (min-width: 1200px) {
-  .story-template__copy {
-    min-width: 1200px;
-  }
-}
 
 .story-template__copy p {
   padding: 10px 0;
@@ -321,9 +316,9 @@ a:focus {
   margin: 0 auto 30px;
   width: 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .story-template__image-w-caption {
-  width: 80%;
+  width: 50%;
 }
 }
 
