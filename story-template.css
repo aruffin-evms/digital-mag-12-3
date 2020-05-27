@@ -429,7 +429,7 @@ body {
 }
 
 /* The dots/bullets/indicators */
-.story-templae__image-slider__dot {
+.story-template__image-slider__dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -444,6 +444,18 @@ body {
   background-color: #717171;
 }
 
+/* Colors */
+.lightblue{
+  color: #c7531e;
+}
+
+.mainblue{
+  color: #1f7f9b;
+}
+
+.rust{
+  color: #c7531e;
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
