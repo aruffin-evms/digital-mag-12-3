@@ -35,6 +35,10 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+a {
+  text-decoration: none;
+}
 .landing-page__section {
   width: 100vw;
 }
@@ -53,22 +57,14 @@ img {
 }
 
 .landing-page__president-cta {
-  background-color: #cc6434;
   height: 150px;
   width: 200px;
   position: relative;
   right: -84%;
-  /* clip-path: polygon(50% 0, 0 100%, 100% 100%) */
 }
 
 .president-cta__image {
-  background-color: gray;
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
-  position: relative;
-  top: 20px;
-  left: 30%;
+  /* background-image: url(../12.3/assets/landing-page/President-tab-rust-bg.png); */
 }
 
 .landing-page__president-cta__point {
@@ -76,9 +72,6 @@ img {
   width: 100%;
   position: relative;
   top: 25px;
-  background-color: #cc6434;
-  clip-path: polygon(50.00% 36px, 0px 100%, 100% 100%);
-  transform: rotate(180deg);
 }
 
 .landing-page__hero__container {
