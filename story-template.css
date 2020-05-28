@@ -318,7 +318,7 @@ a:focus {
 }
 @media (min-width: 900px) {
   .story-template__image-w-caption {
-  width: 50%;
+  width: 70%;
 }
 }
 
