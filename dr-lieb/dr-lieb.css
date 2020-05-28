@@ -32,14 +32,22 @@ body {
 }
 
 .dr-lieb__hero {
-  
+  height: 40vh;
+  width: 100vw;
+}
+
+@media(min-width: 900px) {
+  .dr-lieb__hero {
+    height: 80vh;
+  }
 }
 
 .dr-lieb__hero__image {
-  height: 80vh;
   object-fit: cover;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
+
 .dr-lieb__copy {
   max-width: 1440px;
   margin: 0 auto;
@@ -53,19 +61,31 @@ body {
 }
 
 .dr-lieb__title {
-  font-size: 70px;
+  font-size: 40px;
   padding: 60px 0 0;
   max-width: 1440px;
   margin: 0 auto;
   width: 90%;
 }
 
+@media(min-width: 900px) {
+  .dr-lieb__title {
+    font-size: 70px;
+  }
+}
+
 .dr-lieb__subtitle {
   font-size: 22px;
-  padding: 20px 0 60px;
+  padding: 20px 0 30px;
   max-width: 1440px;
   margin: 0 auto;
   width: 90%;
+}
+
+@media(min-width: 900px) {
+  .dr-lieb__subtitle {
+    padding: 20px 0 60px;
+  }
 }
 
 .dr-lieb__pull-qoute {
@@ -102,10 +122,17 @@ body {
 
 .dr-lieb__pull-qoute__image--horizontal {
   /* width: 700px; */
-  height: 604px;
-width: 900px;
+  height: auto;  
+width: 100%;
 margin: 0 auto;
 display: flex;
+}
+
+@media(min-width: 900px) {
+  .dr-lieb__pull-qoute__image--horizontal {
+    height: 604px;
+    width: 900px;
+  }
 }
 
 .dr-lieb__graphic-caption {
@@ -116,6 +143,7 @@ display: flex;
 .dr-lieb__graphic-caption--horizontal {
   flex-direction: row;
   height: 300px;
+  /* width: 40%; */
 }
 
 .dr-lieb__graphic-caption--vertical {
@@ -125,25 +153,56 @@ display: flex;
 }
 
 .dr-lieb__graphic-caption__graphic {
-  height: 400px;
-  min-width: 600px;
+  height: 150px;
+  /* min-width: 600px; */
   position: relative;
   z-index: 5;
 }
 
 .dr-lieb__graphic-caption__graphic--horizontal {
-  top: -100px;
-  left: 90px;
+
 }
+
+.dr-lieb__graphic-caption__caption--one {
+  width: 60%;
+  font-size: 18px;
+line-height: 22px;
+}
+
+
+
+@media(min-width: 900px) {
+  .dr-lieb__graphic-caption__graphic {
+    height: 400px;
+    min-width: 600px;
+  }
+
+  .dr-lieb__graphic-caption__graphic--horizontal {
+    top: -100px;
+    left: 90px;
+  }
+
+  .dr-lieb__graphic-caption__caption--one {
+    width: 40%;
+  }
+}
+
 
 .dr-lieb__graphic-caption__graphic--vertical {
   right: 200px;
 }
 
 .dr-lieb__graphic-caption__caption {
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 18px;
+line-height: 22px;
   display: flex;
   justify-self: center;
   padding-left: 30px;
+}
+
+@media(min-width: 900px) {
+  .dr-lieb__graphic-caption__caption {
+    font-size: 32px;
+  line-height: 42px;
+  }
 }
