@@ -61,11 +61,21 @@ img {
   /* clip-path: polygon(50% 0, 0 100%, 100% 100%) */
 }
 
+.president-cta__image {
+  background-color: gray;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  position: relative;
+  top: 20px;
+  left: 30%;
+}
+
 .landing-page__president-cta__point {
   height: 100px;
   width: 100%;
   position: relative;
-  top: 109px;
+  top: 25px;
   background-color: #cc6434;
   clip-path: polygon(50.00% 36px, 0px 100%, 100% 100%);
   transform: rotate(180deg);
@@ -129,6 +139,12 @@ top: -116px;
   border: solid 2px white;
   padding: 10px 40px;
   font-size: 30px;
+  text-decoration: none;
+}
+
+.landing-page__hero-banner__cta:hover {
+  color: white !important;
+  text-decoration: underline;
 }
 
 a:hover {
