@@ -33,6 +33,7 @@ html {
 
 body { 
   overflow-x: hidden;
+  font-family: myriad-pro,myriad,sans-serif;
 }
 
 /* for qoute backgrounds */
@@ -50,12 +51,16 @@ svg {
   }
 }
 
+.street-health__captions--mobile {
+  display: none;
+}
 /* captions for mobile */
 @media(max-width: 899px) {
   .street-health__captions--mobile {
     width: 90%;
     margin: 0 auto;
     padding: 15px  0 0;
+    /* display: none; */
   }
 }
 /* set z-index for sections */
@@ -116,7 +121,7 @@ svg {
     font-size: 20px;
     padding-bottom: 100px;
     position: fixed;
-    top: 70%;
+    top: 75%;
     z-index: 0;
     right: 10%;
     max-width: 600px;
