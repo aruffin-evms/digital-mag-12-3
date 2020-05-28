@@ -51,7 +51,7 @@ body {
 .dr-lieb__copy {
   max-width: 1440px;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 .dr-lieb__p {
@@ -65,7 +65,7 @@ body {
   padding: 60px 0 0;
   max-width: 1440px;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 @media(min-width: 900px) {
@@ -79,7 +79,7 @@ body {
   padding: 20px 0 30px;
   max-width: 1440px;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 @media(min-width: 900px) {
