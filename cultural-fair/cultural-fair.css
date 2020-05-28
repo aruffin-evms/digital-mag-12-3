@@ -34,7 +34,7 @@ body {
 }
 
 .cultural-fair__hero {
-  height: 90vh;
+  height: 50vh;
   width: 100vw;
   background-color: gray;
 }
@@ -81,11 +81,11 @@ body {
   margin: 0 auto;
 }
 
-@media(min-width: 900px) {
+/* @media(min-width: 900px) {
   .cultural-fair__copy {
     width: 100%;
   }
-}
+} */
 
 .cultural-fair__p {
   padding: 10px 0;
@@ -178,6 +178,14 @@ body {
 
 .cultural-fair__image-caption {
   padding-bottom: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media(min-width: 900px) {
+  .cultural-fair__image-caption {
+    width: 100%;
+  }
 }
 
 .cultural-fair__pull-qoute__container {
@@ -270,6 +278,8 @@ body {
 @media(min-width: 900px) {
   .cultural-fair__intro-qoute__asset {
     height: 100px;
+    position: relative;
+    left: 70px;
   }
 }
 
