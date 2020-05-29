@@ -171,8 +171,7 @@ a:focus {
 .story-template__pull-quote {
   max-width: 600px;
   height: auto;
-  /* background-color: yellow; */
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .story-template__pull-quote__copy {
