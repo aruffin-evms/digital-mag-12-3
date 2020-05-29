@@ -31,6 +31,10 @@ body {
   font-family: myriad-pro,myriad,sans-serif;
 }
 
+.dr-lieb__question {
+  font-weight: bold;
+  margin-bottom: -10px;
+}
 .dr-lieb__hero-iframe {
   position: relative;
   overflow: hidden;
@@ -62,9 +66,13 @@ body {
 }
 
 .dr-lieb__p {
-  padding: 20px 0;
+  padding: 0 0 30px;
   font-size: 18px;
   line-height: 25px;
+}
+
+.dr-lieb__intro {
+  padding-top: 60px;
 }
 
 .dr-lieb__title {
