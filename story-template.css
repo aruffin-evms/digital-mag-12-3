@@ -83,6 +83,10 @@ a:focus {
   }
 }
 
+.story-template__iframe-padding {
+  padding-top: 60px;
+}
+
 .story-template__hero-iframe {
   position: relative;
   overflow: hidden;
