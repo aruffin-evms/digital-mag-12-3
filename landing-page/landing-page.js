@@ -8,18 +8,18 @@ const slide3 = document.getElementById("s3");
 const stories = {
   storyOne: {
     category: "",
-    title: "Alumni Title",
-    link: ""
+    title: "From EVMS to the CDC",
+    link: "../chow/chow.html"
   },
   storyTwo: {
     category: "",
-    title: "Behind bench title",
-    link: ""
+    title: "Cellular detective work",
+    link: "../anca-dobrian/anca.html"
   },
   storyThree: {
     category: "",
-    title: "Comics title",
-    link: ""
+    title: "Hero without a cape",
+    link: "../dr-lieb/dr-lieb.html"
   }
 };
 
