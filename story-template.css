@@ -83,6 +83,10 @@ a:focus {
   }
 }
 
+.story-template__hero-pano {
+  height:auto;
+}
+
 .story-template__hero__image {
   object-fit: cover;
   height: 100%;
