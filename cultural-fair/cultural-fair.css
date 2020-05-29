@@ -27,18 +27,6 @@ tr, th, td {
 }
 /* [End] css reset */
 
-body {
-  font-family: myriad-pro,myriad,sans-serif;
-  font-size: 18px;
-  overflow-x: hidden;
-}
-
-/* .cultural-fair__hero {
-  height: 50vh;
-  width: 100vw;
-  background-color: gray;
-} */
-
 
 .cultural-fair__hero-iframe {
   position: relative;
@@ -249,6 +237,7 @@ body {
 .cultural-fail__pull-quote__quote {
   font-family:"Overlock", cursive;
   font-size:1.75em;
+  font-weight: 900;
   width: 90%;
   margin: 0 auto;
   color: #c7531e;
@@ -283,7 +272,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  
 }
 
 @media(min-width: 900px) {
