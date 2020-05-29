@@ -31,15 +31,22 @@ body {
   font-family: myriad-pro,myriad,sans-serif;
 }
 
-.dr-lieb__hero {
-  height: 40vh;
-  width: 100vw;
+.dr-lieb__hero-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  max-height: 80vh;
 }
 
-@media(min-width: 900px) {
-  .dr-lieb__hero {
-    height: 80vh;
-  }
+.dr-lieb__hero-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .dr-lieb__hero__image {
