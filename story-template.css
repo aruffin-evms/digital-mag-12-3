@@ -33,6 +33,16 @@ body {
   line-height: 30px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 1200px){
   body {
     font-size: 18px;
@@ -214,7 +224,7 @@ a:focus {
 .story-template__pull-quote__source {
   text-align: center;
   font-weight: 800;
-  padding-top: 15px
+  padding: 15px 0 30px;
 }
 
 .story-template__copy {
@@ -341,6 +351,7 @@ a:focus {
 @media (min-width: 900px) {
   .story-template__image-w-caption {
   width: 50%;
+  margin: 30px auto;
 }
 }
 
@@ -553,4 +564,33 @@ a:focus {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.story-template__image-w-caption__play-icon {
+  height: 70px;
+  position: relative;
+  top: -223px;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.story-template__image-w-caption__play-icon:hover {
+  transform: scale(1.1);
+}
+
+.story-template__iframe-wrapper {
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  position: relative;
+  top: -378px;
+  /* transition: 1s all; */
+  /* display: none; */
+}
+
+#phillipDebIframe {
+  height: 100%;
+  width: 100%;
+  min-height: 370px;
+  display: none;
 }
