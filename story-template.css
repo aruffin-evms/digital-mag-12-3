@@ -181,7 +181,7 @@ a:focus {
 .image__float-left {
   float: left;
   margin-right: 20px;
-  height: 350px;
+  height: 400px;
   padding-top: 20px;
 }
 
@@ -234,12 +234,11 @@ a:focus {
 }
 
 .story-template__pull-quote__copy {
-  height: 80%;
-  width: 90%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
-  font-size: 2.5em;
-  line-height: 1.25em;
+  font-size: 1.75em;
+  line-height: 1.5em;
   padding: 30px 0 15px;
 }
 
@@ -284,7 +283,7 @@ a:focus {
 }
 @media (min-width: 1200px) {
   .story-template__headline {
-    font-size: 2.25em;
+    font-size: 2.5em;
   }
 }
 
@@ -596,7 +595,7 @@ a:focus {
 .story-template__image-w-caption__play-icon {
   height: 70px;
   position: relative;
-  top: -223px;
+  top: -300px;
   cursor: pointer;
   transition: 1s all;
 }
