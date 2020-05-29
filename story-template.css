@@ -378,6 +378,7 @@ a:focus {
   .story-template__image-w-caption {
   width: 70%;
   margin: 30px auto;
+  max-width: 900px;
 }
 }
 
