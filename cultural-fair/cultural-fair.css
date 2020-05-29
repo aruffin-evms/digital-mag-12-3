@@ -91,16 +91,6 @@ tr, th, td {
   margin: 0 auto;
 }
 
-/* @media(min-width: 900px) {
-  .cultural-fair__copy {
-    width: 100%;
-  }
-} */
-
-.cultural-fair__p {
-  padding: 10px 0;
-}
-
 .cultural-fair__qoute-image {
   max-width: 90vw;
   width: 90%;
@@ -148,7 +138,6 @@ tr, th, td {
 }
 
 .cultural-fair__divider--orange, .cultural-fair__divider--blue {
-  /* background-image: url(); */
   background-size: cover;
   min-height: 50px;
   width: 100vw;
@@ -160,6 +149,7 @@ tr, th, td {
     min-height: 200px;
     margin: 50px 0 90px;
   }
+}
 
   .cultural-fair__divider--blue {
     min-height: 50px;
