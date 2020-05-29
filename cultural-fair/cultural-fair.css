@@ -33,10 +33,28 @@ body {
   overflow-x: hidden;
 }
 
-.cultural-fair__hero {
+/* .cultural-fair__hero {
   height: 50vh;
   width: 100vw;
   background-color: gray;
+} */
+
+
+.cultural-fair__hero-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.cultural-fair__hero-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .cultural-fair__title-asset__wrapper {
@@ -148,9 +166,14 @@ body {
 }
 
 @media(min-width: 900px) {
-  .cultural-fair__divider--orange, .cultural-fair__divider--blue {
+  .cultural-fair__divider--orange {
     min-height: 250px;
     margin: 100px 0;
+  }
+
+  .cultural-fair__divider--blue {
+    min-height: 250px;
+    margin: 50px 0 100px;
   }
 }
 
@@ -206,7 +229,7 @@ body {
 @media(min-width: 600px) {
   .cultural-fair__pull-qoute__asset {
     width: 30%;
-    height: 180px;
+    height: 160px;
   }
 }
 
@@ -222,6 +245,11 @@ body {
     font-size: 50px;
     width: 60%;
   }
+}
+
+.cultural-fair__pull-qoute__source {
+  padding: 10px 0 0;
+  color: gray;
 }
 
 .cultural-fair__intro-qoute {
