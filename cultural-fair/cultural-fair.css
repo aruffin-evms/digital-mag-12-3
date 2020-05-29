@@ -78,17 +78,21 @@ body {
 }
 
 .cultural-fair__title {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  font-size: 60px;
+  font-size: 4em;
   color: #c7531e;
   padding: 30px 0;
+  font-family: "Overlock", cursive;
+  font-weight: 900;
+  width: 80%;
+  line-height: 1.25em;
 }
 
 @media(min-width: 900px) {
   .cultural-fair__title {
-    font-size: 90px;
+    font-size: 4.5em;
   }
 }
 
@@ -111,12 +115,11 @@ body {
 
 .cultural-fair__qoute-image {
   max-width: 90vw;
-  height: 700px;
   width: 90%;
   margin: 0 auto;
 }
 
-.cultural-fair__qoute-image__wrapper {
+.cultural-fair__quote-image__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -126,31 +129,30 @@ body {
   width: auto;
 }
 
-.cultural-fair__qoute-image__qoute {
+.cultural-fair__quote-image__quote {
   width: 35%;
-  font-size: 50px;
   text-align: right;
   display: flex;
   justify-self: right;
   align-self: center;
+  font-family: "Overlock", cursive;
+  font-weight: 900;
 }
 .cultural-fair__wrapper {
   display: flex;
   flex-direction: column;
 }
-.cultural-fair__qoute-image__source {
+.cultural-fair__quote-image__source {
   font-weight: 300;
   height: 10px;
 }
 
-.cultural-fair__qoute-image__image-wrapper {
+.cultural-fair__quote-image__image-wrapper {
   width: 50%;
-  height: 100%;
 }
 
-.cultural-fair__qoute-image__image {
-  height: 100%;
-  width: 90%;
+
+.cultural-fair__quote-image__image {
   display: flex;
   justify-self: center;
   align-self: center;
@@ -174,6 +176,11 @@ body {
   .cultural-fair__divider--blue {
     min-height: 200px;
     margin: 30px 0 90px;
+  }
+
+  .cultural-fair__divider--blue {
+    min-height: 250px;
+    margin: 50px 0 100px;
   }
 }
 
@@ -211,14 +218,20 @@ body {
   }
 }
 
-.cultural-fair__pull-qoute__container {
+@media(min-width: 900px) {
+  .cultural-fair__image-caption {
+    width: 100%;
+  }
+}
+
+.cultural-fair__pull-quote__container {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 50px 0;
 }
 
-.cultural-fair__pull-qoute__asset {
+.cultural-fair__pull-quote__asset {
   height: 90px;
   width: 70%;
   margin: 0 auto;
@@ -227,13 +240,13 @@ body {
 }
 
 @media(min-width: 600px) {
-  .cultural-fair__pull-qoute__asset {
+  .cultural-fair__pull-quote__asset {
     width: 30%;
     height: 160px;
   }
 }
 
-.cultural-fail__pull-qoute__qoute {
+.cultural-fail__pull-quote__quote {
   font-size: 30px;
   width: 90%;
   margin: 0 auto;
@@ -241,44 +254,45 @@ body {
 }
 
 @media(min-width: 900px) {
-  .cultural-fail__pull-qoute__qoute {
+  .cultural-fail__pull-quote__quote {
     font-size: 50px;
     width: 60%;
   }
 }
 
-.cultural-fair__pull-qoute__source {
+.cultural-fair__pull-quote__source {
   padding: 10px 0 0;
   color: gray;
 }
 
-.cultural-fair__intro-qoute {
+.cultural-fair__intro-quote {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 @media(min-width: 900px) {
-  .cultural-fair__intro-qoute {
+  .cultural-fair__intro-quote {
     padding: 50px 0;
   }
 }
 
-.cultural-fair__intro-qoute__wrapper {
+.cultural-fair__intro-quote__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 800px;
+  
 }
 
 @media(min-width: 900px) {
-  .cultural-fair__intro-qoute__wrapper {
+  .cultural-fair__intro-quote__wrapper {
     flex-wrap: nowrap;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
 }
-.cultural-fair__intro-qoute__container {
+
+.cultural-fair__intro-quote__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,14 +302,13 @@ body {
 }
 
 @media(min-width: 900px) {
-  .cultural-fair__intro-qoute__container {
-    width: 50%;
+  .cultural-fair__intro-quote__container {
+    width: 80%;
     margin: 0;
-    height: 100%;
   }
 }
 
-.cultural-fair__intro-qoute__asset {
+.cultural-fair__intro-quote__asset {
   background-image: url(../12.3/assets/cultural-fair/Asset\ 4.svg);
   background-repeat: no-repeat;
   height: 50px;
@@ -304,57 +317,39 @@ body {
 }
 
 @media(min-width: 900px) {
-  .cultural-fair__intro-qoute__asset {
-    height: 100px;
-    position: relative;
-    left: 70px;
+  .cultural-fair__intro-quote__asset {
+    margin: 0 auto 30px;
   }
 }
 
 
-.cultural-fair__intro-qoute__qoute {
-  /* width: 35%; */
-  font-size: 20px;
+.cultural-fair__intro-quote__quote {
   text-align: center;
   display: flex;
   justify-self: right;
   align-self: center;
   color: #c7531e;
   padding-right: 0;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+  font-size: 1.5em;
+  font-weight: 900;
+  font-family: "Overlock", cursive;
+  line-height: 1.5em;
 }
 
 @media(min-width: 900px) {
-  .cultural-fair__intro-qoute__qoute {
-    font-size: 50px;
+  .cultural-fair__intro-quote__quote {
     text-align: right;
-    padding-right: 30px;
+    padding-right: 60px;
+    width: 80%;
+    align-self: end;
   }
 }
 
-.cultural-fair__intro-qoute__image-wrapper {
-  width: auto;
-  height: auto;
-}
-
-@media(min-width: 900px) {
-  .cultural-fair__intro-qoute__image-wrapper {
-    height: 100%;
-  }
-}
-
-.cultural-fair__intro-qoute__image {
+.cultural-fair__intro-quote__image {
   object-fit: cover;
   height: auto;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
-}
-
-@media(min-width: 900px) {
-  .cultural-fair__intro-qoute__image {
-    width: auto;
-    height: 100%;
-    margin: 0;
-  }
 }
