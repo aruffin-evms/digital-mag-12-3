@@ -129,7 +129,7 @@ a:focus {
   width: 100%;
   background-color: gray;
   margin: 0 auto 30px;
-  max-width: 1440px
+  max-width: 1200px
 }
 
 .story-template__hero-iframe {
@@ -376,7 +376,7 @@ a:focus {
 }
 @media (min-width: 900px) {
   .story-template__image-w-caption {
-  width: 50%;
+  width: 70%;
   margin: 30px auto;
 }
 }
