@@ -44,25 +44,62 @@ a {
 }
 
 .landing-page__hero {
-  height: 40vh;
-  background-image: url(../12.3/assets/landing-page/hero-placeholder@2x.jpg);
+  /* height: 40vh;
+  position: relative; */
+  /* background-image: url(../12.3/assets/landing-page/hero-placeholder@2x.jpg);
   background-size: cover;
-  background-position: 15%;
+  background-position: 15%; */
+  /* height: 80vh; */
+  /* height: 100% !important; */
+  min-height: 30vh;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (min-width: 900px) {
   .landing-page__hero {
-    height: 90vh;
+    /* height: fit-content; */
+    min-height: 80vh;
   }
+}
+
+.landing-page__hero__video {
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    object-fit: cover;
 }
 
 .landing-page__president-cta {
   height: 150px;
-  width: 200px;
+  width: min-content;
   position: relative;
   right: -84%;
+  z-index: 10;
+  transition: .5s all;
+  top: -20px;
 }
 
+.landing-page__president-cta:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.president-cta__label {
+  position: relative;
+  z-index: 15;
+  top: 35px;
+  /* left: 10px; */
+  width: auto;
+  text-align: center;
+  color: white;
+}
 .president-cta__image {
   /* background-image: url(../12.3/assets/landing-page/President-tab-rust-bg.png); */
 }
@@ -86,7 +123,7 @@ a {
     height: 100%;
     position: relative;
     z-index: 10;
-top: -116px;
+    top: 200px;
   }
 }
 
@@ -111,6 +148,7 @@ top: -116px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
 }
 
 .landing-page__hero-banner__title {
@@ -564,7 +602,7 @@ input[type="radio"]:checked {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-image: url(../12.3/assets/landing-page/confetti.svg);
+  /* background-image: url(../12.3/assets/landing-page/confetti.svg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -604,4 +642,18 @@ input[type="radio"]:checked {
 
 .landing-page__graduation__cta:hover {
   color: white;
+}
+#confetti {
+  
+  /* background-color: gray; */
+  /* z-index: -1; */
+  
+}
+
+canvas {
+  position: relative;
+  top: -270px;
+  z-index: -1;
+  max-width: 1440px;
+  height: 600px !important;
 }
