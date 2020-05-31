@@ -91,16 +91,6 @@ tr, th, td {
   margin: 0 auto;
 }
 
-/* @media(min-width: 900px) {
-  .cultural-fair__copy {
-    width: 100%;
-  }
-} */
-
-.cultural-fair__p {
-  padding: 10px 0;
-}
-
 .cultural-fair__qoute-image {
   max-width: 90vw;
   width: 90%;
@@ -148,7 +138,6 @@ tr, th, td {
 }
 
 .cultural-fair__divider--orange, .cultural-fair__divider--blue {
-  /* background-image: url(); */
   background-size: cover;
   min-height: 50px;
   width: 100vw;
@@ -157,9 +146,10 @@ tr, th, td {
 
 @media(min-width: 900px) {
   .cultural-fair__divider--orange {
-    min-height: 200px;
+    min-height: 150px;
     margin: 50px 0 90px;
   }
+}
 
   .cultural-fair__divider--blue {
     min-height: 50px;
@@ -169,7 +159,7 @@ tr, th, td {
   @media(min-width: 900px) {
   .cultural-fair__divider--blue {
     min-height: 150px;
-    margin: 50px 0 100px;
+    margin: 90px 0;
   }
 }
 
@@ -212,11 +202,21 @@ tr, th, td {
   }
 }
 
+
+/* cultural-fair.css | http://127.0.0.1:5500/cultural-fair/cultural-fair.css */
+
+@media (min-width: 900px) {
+  .cultural-fair__divider--orange {
+    min-height: 150px;
+  }
+}
+
 .cultural-fair__pull-quote__container {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 50px 0;
+  align-items: center;
 }
 
 .cultural-fair__pull-quote__asset {
@@ -229,8 +229,8 @@ tr, th, td {
 
 @media(min-width: 600px) {
   .cultural-fair__pull-quote__asset {
-    width: 30%;
-    height: 160px;
+    width: 275px;
+    height: 115px;
   }
 }
 
@@ -247,13 +247,15 @@ tr, th, td {
 @media(min-width: 900px) {
   .cultural-fail__pull-quote__quote {
     font-size:2.5em;
-    width: 60%;
+    width: 50%;
   }
 }
 
 .cultural-fair__pull-quote__source {
   padding: 10px 0 0;
-  color: gray;
+  color: #616161;
+  font-family: "myriad-pro-condensed", sans-serif;
+  font-size: 1em;
 }
 
 .cultural-fair__intro-quote {
@@ -263,7 +265,7 @@ tr, th, td {
 
 @media(min-width: 900px) {
   .cultural-fair__intro-quote {
-    padding: 50px 0;
+    padding: 90px 0 50px;
   }
 }
 
@@ -295,20 +297,20 @@ tr, th, td {
   .cultural-fair__intro-quote__container {
     width: 80%;
     margin: 0;
+    align-items: flex-end;
   }
 }
 
 .cultural-fair__intro-quote__asset {
   background-image: url(../12.3/assets/cultural-fair/Asset\ 4.svg);
   background-repeat: no-repeat;
-  height: 50px;
-  width: 50%;
-  margin: 0 auto;
+  height: 100px;
+  width: 40%;
 }
 
 @media(min-width: 900px) {
   .cultural-fair__intro-quote__asset {
-    margin: 0 auto 30px;
+   margin-right: 100px;
   }
 }
 
@@ -316,11 +318,9 @@ tr, th, td {
 .cultural-fair__intro-quote__quote {
   text-align: center;
   display: flex;
-  justify-self: right;
-  align-self: center;
   color: #c7531e;
   padding-right: 0;
-  margin: 0 auto 30px;
+  margin: 0 60px 15px 0;
   font-size: 1.5em;
   font-weight: 900;
   font-family: "Overlock", cursive;
@@ -330,10 +330,16 @@ tr, th, td {
 @media(min-width: 900px) {
   .cultural-fair__intro-quote__quote {
     text-align: right;
-    padding-right: 60px;
-    width: 80%;
-    align-self: end;
+    width: 70%;
   }
+}
+
+.cultural-fair__intro-quote__source {
+  font-family: "myriad-pro-condensed", sans-serif;
+  color: #616161;
+  font-size: 1em;
+  margin-right: 60px;
+
 }
 
 .cultural-fair__intro-quote__image {
