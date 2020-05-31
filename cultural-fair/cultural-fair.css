@@ -202,13 +202,14 @@ tr, th, td {
   }
 }
 
-
 .cultural-fair__pull-quote__container {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 50px 0;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cultural-fair__pull-quote__asset {
