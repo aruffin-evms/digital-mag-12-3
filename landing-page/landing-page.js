@@ -23,6 +23,19 @@ const stories = {
   }
 };
 
+const infograph = document.getElementById('infograph')
+
+observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      console.log('in the view');
+    // create a trigger function and put it here
+    }
+  });
+});
+
+observer.observe(infograph);
+
 slide1.addEventListener("click", function() {
   // slideCategory.innerHTML = stories.storyOne.category;
   slideStoryTitle.innerHTML = stories.storyOne.title;

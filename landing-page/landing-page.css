@@ -91,9 +91,9 @@ a {
 
 @media(min-width: 900px) {
   .landing-page__president-cta {
-    width: min-content;
     right: -84%;
     top: -20px;
+    transform: scale(1);
   }
 }
 
