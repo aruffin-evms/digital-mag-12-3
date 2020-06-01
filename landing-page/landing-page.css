@@ -35,6 +35,7 @@ body {
 img {
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 a {
@@ -79,17 +80,28 @@ a {
 
 .landing-page__president-cta {
   height: 150px;
-  width: min-content;
+  width: 150px;
   position: relative;
-  right: -84%;
+  right: -54%;
   z-index: 10;
   transition: .5s all;
-  top: -20px;
+  top: -44px;
+  transform: scale(.6);
 }
 
-.landing-page__president-cta:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+@media(min-width: 900px) {
+  .landing-page__president-cta {
+    width: min-content;
+    right: -84%;
+    top: -20px;
+  }
+}
+
+@media(min-width: 900px) {
+  .landing-page__president-cta:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 }
 
 .president-cta__label {
@@ -170,15 +182,21 @@ a {
   background-color: inherit;
   border: solid 2px white;
   padding: 10px 40px;
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   transition: all .5s;
 }
 
-.landing-page__hero-banner__cta:hover {
-  color: white !important;
-  text-decoration: underline;
-  font-size: 33px;
+@media(min-width: 900px) {
+  .landing-page__hero-banner__cta {
+    font-size: 30px;
+  }
+
+  .landing-page__hero-banner__cta:hover {
+    color: white !important;
+    text-decoration: underline;
+    font-size: 33px;
+  }
 }
 
 a {
@@ -284,6 +302,7 @@ a:hover {
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
+  padding-top: 30px;
 }
 
 @media (min-width: 900px) {
@@ -350,7 +369,7 @@ a:hover {
 }
 
 .landing-page__more-stories__carousel__label__title {
-  font-size: 49px;
+  font-size: 20px;
   padding-top: 20px;
   color: #1f7f9b;
   transition: 0.5s ease;
@@ -360,6 +379,7 @@ a:hover {
   .landing-page__more-stories__carousel__label__title {
     margin-top: -60px;
     padding-top: 0;
+    font-size: 49px;
   }
 }
 
@@ -514,7 +534,7 @@ input[type="radio"]:checked {
 }
 
 .landing-page__ivf__container {
-  height: 550px;
+  height: auto;
   width: 100%;
   max-width: 1440px;
   background-color: rgba(199, 199, 199, 0.3);
@@ -528,6 +548,7 @@ input[type="radio"]:checked {
 @media(min-width: 900px) {
   .landing-page__ivf__container {
     flex-wrap: nowrap;
+    height: 550px;
   }
 }
 
@@ -536,23 +557,55 @@ input[type="radio"]:checked {
   align-self: center;
   flex-direction: column;
   height: 70%;
-  width: 40%;
+  width: 100%;
   padding: 0 30px;
 }
+
+@media(min-width: 900px) {
+  .landing-page__ivf__copy {
+    width: 40%;
+  }
+}
+
 .landing-page__ivf__title {
-  font-size: 50px;
-  padding-bottom: 20px;
+  font-size: 30px;
+  padding: 30px 0 20px;
   color: #1f7f9b;
 }
 
+@media(min-width: 900px) {
+  .landing-page__ivf__title {
+    font-size: 50px;
+    padding: 0;
+  }
+}
+
 .landing-page__ivf__subtitle {
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+@media(min-width: 900px) {
+  .landing-page__ivf__subtitle {
+    font-size: 36px;
+    line-height: 46px;
+    padding-bottom: 0;
+  }
 }
 
 .landing-page__ivf__image-wrapper {
-  width: 57%;
+  width: 90%;
   max-height: 550px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+@media(min-width: 900px) {
+  .landing-page__ivf__image-wrapper {
+    width: 57%;
+    padding-bottom: 0;
+  }
 }
 
 .landing-page__ivf__image {
@@ -561,7 +614,13 @@ input[type="radio"]:checked {
 }
 
 .landing-page__infograph {
-  padding: 160px 0 0;
+  padding: 60px 0 0;
+}
+
+@media(min-width: 900px) {
+  .landing-page__infograph {
+    padding: 160px 0 0;
+  }
 }
 
 .landing-page__infograph__container {
@@ -597,14 +656,20 @@ input[type="radio"]:checked {
   padding-top: 30px;
   text-align: center;
   color: #1f7f9b;
-  font-size: 49px;
+  font-size: 30px;
+}
+
+@media (min-width: 900px) {
+  .landing-page__story-link {
+    font-size: 49px;
+  }
 }
 
 .landing-page__graduation {
   height: 600px;
   width: 100%;
   max-width: 1440px;
-  margin: 160px auto;
+  /* margin: 160px auto; */
   display: flex;
   justify-content: center;
   align-content: center;
@@ -616,6 +681,11 @@ input[type="radio"]:checked {
   background-blend-mode: lighten;
 }
 
+@media(min-width: 900px) {
+  .landing-page__graduation {
+    margin: 160px auto;
+  }
+}
 .landing-page__graduation__content {
   height: 50%;
   width: 90%;
@@ -627,14 +697,26 @@ input[type="radio"]:checked {
 
 .landing-page__graduation__title {
   color: #1f7f9b;
-  font-size: 63px;
+  font-size: 30px;
+}
+
+@media(min-width: 900px) {
+  .landing-page__graduation__title {
+    font-size: 63px;
+  }
 }
 .landing-page__graduation__subtitle {
   width: 80%;
   padding-bottom: 70px;
   margin: 0 auto;
-  font-size: 36px;
+  font-size: 20px;
   color: black;
+}
+
+@media(min-width: 900px) {
+  .landing-page__graduation__subtitle {
+    font-size: 36px;
+  }
 }
 
 .landing-page__graduation__cta {

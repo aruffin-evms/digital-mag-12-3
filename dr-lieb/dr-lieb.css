@@ -113,6 +113,19 @@ body {
   padding: 60px 0;
 }
 
+/* for second graphic - mobile only */
+@media(max-width: 899px) {
+  .dr-lieb__pull-qoute {
+    flex-wrap: wrap;
+  }
+
+  .dr-lieb__pull-qoute__image--vertical {
+    height: 500px;
+     width: 300px;
+     object-fit: cover;
+  }
+}
+
 .dr-lieb__pull-qoute---vertical {
   flex-direction: column;
   /* width: 700px;
@@ -130,9 +143,11 @@ body {
   object-fit: cover;
 }
 
-.dr-lieb__pull-qoute__image--vertical {
-  height: 700px;
-  width: 500px;
+@media(min-width: 900px) {
+  .dr-lieb__pull-qoute__image--vertical {
+    height: 700px;
+    width: 500px;
+  }
 }
 
 .dr-lieb__pull-qoute__image--horizontal {
@@ -156,17 +171,29 @@ display: flex;
 }
 
 .dr-lieb__graphic-caption--horizontal {
-  flex-direction: row;
-  height: 300px;
+  flex-direction: column;
+  height: auto;
   /* width: 40%; */
+}
+
+@media(min-width: 900px) {
+  .dr-lieb__graphic-caption--horizontal {
+    flex-direction: row;
+    height: 300px;
+  }
 }
 
 .dr-lieb__graphic-caption--vertical {
   flex-direction: column;
-  width: 40%;
+  width: 90%;
   height: auto;
 }
 
+@media(min-width: 900px) {
+  .dr-lieb__graphic-caption--vertical {
+    width: 40%;
+  }
+}
 .dr-lieb__graphic-caption__graphic {
   height: 150px;
   /* min-width: 600px; */
@@ -174,14 +201,25 @@ display: flex;
   z-index: 5;
 }
 
-.dr-lieb__graphic-caption__graphic--horizontal {
-
+@media(max-width: 899px) {
+  .dr-lieb__graphic-caption__graphic--horizontal {
+    position: relative;
+    top: -25px;
+  }
 }
 
 .dr-lieb__graphic-caption__caption--one {
-  width: 60%;
+  width: 90%;
   font-size: 18px;
-line-height: 22px;
+  line-height: 22px;
+  /* text-align: center; */
+}
+
+@media(min-width: 900px) {
+  .dr-lieb__graphic-caption__caption--one {
+    width: 60%;
+    text-align: left;
+  }
 }
 
 
@@ -202,9 +240,14 @@ line-height: 22px;
   }
 }
 
-
 .dr-lieb__graphic-caption__graphic--vertical {
-  right: 200px;
+  top: -30px;
+}
+
+@media(min-width: 900px) {
+  .dr-lieb__graphic-caption__graphic--vertical {
+    right: 200px;
+  }
 }
 
 .dr-lieb__graphic-caption__caption {
@@ -212,12 +255,14 @@ line-height: 22px;
 line-height: 22px;
   display: flex;
   justify-self: center;
-  padding-left: 30px;
+  margin: 0 auto;
 }
 
 @media(min-width: 900px) {
   .dr-lieb__graphic-caption__caption {
     font-size: 32px;
   line-height: 42px;
+  padding-left: 30px;
+  margin: 0;
   }
 }
