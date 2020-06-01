@@ -138,10 +138,11 @@ tr, th, td {
 }
 
 .cultural-fair__divider--orange, .cultural-fair__divider--blue {
-  background-size: cover;
+  background-size: contain;
   min-height: 50px;
   width: 100vw;
   margin: 50px 0;
+  background-repeat: no-repeat;
 }
 
 @media(min-width: 900px) {
@@ -202,21 +203,14 @@ tr, th, td {
   }
 }
 
-
-/* cultural-fair.css | http://127.0.0.1:5500/cultural-fair/cultural-fair.css */
-
-@media (min-width: 900px) {
-  .cultural-fair__divider--orange {
-    min-height: 150px;
-  }
-}
-
 .cultural-fair__pull-quote__container {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 50px 0;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cultural-fair__pull-quote__asset {
