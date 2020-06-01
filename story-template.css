@@ -639,10 +639,10 @@ a:focus {
 }
 
 @media (min-width: 900px){
-.story-template__video{
-  width: 70%;
+  .story-template__video{
+    width: 70%;
+  }
 }
-
 
 .story-template__iframe-wrapper {
   position: relative;
