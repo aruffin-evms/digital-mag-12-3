@@ -624,10 +624,16 @@ input[type="radio"]:checked {
 }
 
 .landing-page__infograph__container {
-  height: 800px;
+  height: auto;
   max-width: 1440px;
   margin: 0 auto;
-  background: rgba(135, 206, 250, 0.164);
+  
+}
+
+@media (min-width: 900px) {
+  .landing-page__infograph__container {
+    max-height: 1500px;
+  }
 }
 
 .landing-page__culture {

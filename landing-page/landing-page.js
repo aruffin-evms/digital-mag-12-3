@@ -1,3 +1,44 @@
+//[start] - JSM - 6/1/2020 - 11:52AM - infographic initialization.
+/////////////////////////////////////////////////////////////////
+// globals                                                     //
+/////////////////////////////////////////////////////////////////
+var topBar = document.getElementsByClassName("cls-18")[0];
+var topBarRange = topBar.getAttribute("width");
+var mediumBar = document.getElementsByClassName("cls-17")[0];
+var mediumBarRange = mediumBar.getAttribute("width");
+var bottomBar = document.getElementsByClassName("cls-16")[0];
+var bottomBarRange = bottomBar.getAttribute("width");
+var symbolParts = document.getElementsByClassName("cls-8");
+var arrowShaft = symbolParts[0];
+var arrowHead = symbolParts[3];
+var crossVertical = symbolParts[1];
+var crossHorizontal = symbolParts[2];
+var maleFemaleData = document.getElementsByClassName("cls-5");
+var butterBars = document.getElementsByClassName("cls-6");
+var maleButterBar = butterBars[2];
+var femaleButterBar = butterBars[1];
+var goldenBracket = document.getElementById("polyline424");
+var cohortButterBar = document.getElementById("line268");
+var goldenOutlines = document.getElementsByClassName("cls-11");
+var goldenOutlineOn2 = goldenOutlines[0];
+var goldenOutlineOn0 = goldenOutlines[1];
+var logoNumberMasks = document.getElementsByClassName("cls-10");
+var dashedLine = document.getElementById("line440");
+var healthcareStats = document.getElementsByClassName("cls-19");
+var academiaOne = document.getElementById("path523");
+var academiaFive = document.getElementById("");
+var academiaPercent = document.getElementById("");
+var academiaOne = document.getElementById("path523");
+var academiaFive = document.getElementById("path525");
+var academiaPercent = document.getElementById("path527");
+var publicHealthOne = document.getElementById("path529");
+var publicHealthFive = document.getElementById("path531");
+var publicHealthPercent = document.getElementById("path533");
+var firstPageLoad = true;
+// Hides all parts that animate later.
+hideAllGraphics();
+//[end] - JSM - 6/1/2020 - 11:52AM - infographic initialization.
+
 const slideStoryTitle = document.getElementById("slideStoryTitle");
 const storyTextBlock = document.getElementById("storyTextBlock");
 const link = document.getElementById('storyLink');
@@ -29,7 +70,25 @@ observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.intersectionRatio > 0) {
       console.log('in the view');
-    // create a trigger function and put it here
+      if(firstPageLoad){
+        sleep(femaleSymbolAnimation, this, 1000, 1000);
+        sleep(femaleStatsAnimation, this, 2000, 1000);
+        sleep(maleSymbolAnimation, this, 3000, 1000);
+        sleep(maleStatsAnimation, this, 4000, 1000);
+        sleep(goldenNumberAnimation, this, 5000, 1000);
+        sleep(goldenNumberBarAnimation, this, 6000, 1000);
+        sleep(goldenNumberStatsAnimation, this, 7000, 1000);
+        sleep(dashedLineAnimation, this, 9000, 1000);
+        sleep(numberMaskAnimation, this, 9050, 1000);
+        sleep(dashedLineStatsAnimation, this, 10000, 1000);
+        sleep(topBarAnimation, this, 12000, 1000);
+        sleep(topBarStatsAnimation, this, 13000, 1000);
+        sleep(mediumBarAnimation, this, 14000, 1000);
+        sleep(mediumBarStatsAnimation, this, 15000, 1000);
+        sleep(bottomBarAnimation, this, 16000, 1000);
+        sleep(bottomBarStatsAnimation, this, 17000, 1000);
+        firstPageLoad = false;
+      }
     }
   });
 });
