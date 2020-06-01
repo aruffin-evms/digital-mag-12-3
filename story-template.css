@@ -402,6 +402,7 @@ a:focus {
   flex-direction: column;
   margin: 0 auto 30px;
   width: 100%;
+  position: relative;
 }
 @media (min-width: 900px) {
   .story-template__image-w-caption {
@@ -634,36 +635,33 @@ a:focus {
 .story-template__image-w-caption__play-icon:hover {
   transform: scale(1.1);
 }
+.story-template__video{
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+@media (min-width: 900px){
+.story-template__video{
+  width: 70%;
+}
+
 
 .story-template__iframe-wrapper {
   position: relative;
-  /*transition: 1s all;*/
-  /* display: none; */
-  width: 100%;
+  top: 0;
+  left: 0;
+
   background-color: gray;
-  margin: 0 auto 30px;
   padding-bottom: 56.25%;
   height: 0;
 }
 
-@media (min-width: 900px){
-  .story-template__iframe-wrapper {
-    top: -480px;
-  }
-}
-
-#phillipDebIframe {
-  /* min-width: 375px; */
-  width: 100%;
-  display: none;
-}
-
-@media (min-width:900px) {
-    #phillipDebIframe {
-      min-height: 482px;
-      min-width:800px;
-      display: none;
-  }
+.story-template__iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .story-template__iframe {
