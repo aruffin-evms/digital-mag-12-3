@@ -64,6 +64,16 @@ a:focus {
   text-decoration: underline;
 }
 
+.external-link {
+  color: #c7531e;
+  text-decoration: none;
+  transition: .5s all;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
+
 .story-template {
   display: flex;
   flex-direction: column;

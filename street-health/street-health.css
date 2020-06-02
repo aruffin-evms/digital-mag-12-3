@@ -246,6 +246,13 @@ svg {
   width: 100%;
 } */
 
+.street-health__memoriam {
+  font-style: italic;
+  color: gray;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .street-health__intro__p, .street-health__qoute-section__p {
   padding: 10px 0;
   font-size: 16px;
@@ -432,6 +439,8 @@ svg {
   color: #cc6434;
   /* border-bottom: 2px solid #cc6434; */
 }
+
+
 
 /*! For Carousel - make less hacky */
 
