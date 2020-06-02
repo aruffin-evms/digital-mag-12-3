@@ -26,6 +26,10 @@
   width: 100%;
 }
 
+.dr-lieb__content {
+  margin: 60px auto 0;
+}
+
 .dr-lieb__copy {
   max-width: 1440px;
   margin: 0 auto;
@@ -43,25 +47,12 @@
 }
 
 .dr-lieb__title {
-  font-size: 40px;
-  padding: 60px 0 0;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 80%;
-}
-
-@media(min-width: 900px) {
-  .dr-lieb__title {
-    font-size: 70px;
-  }
-}
-
-.dr-lieb__subtitle {
-  font-size: 22px;
-  padding: 20px 0 30px;
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 80%;
+  font-family: "captain-comic", sans-serif;
+  font-style: italic;
+  color: #000;
 }
 
 @media(min-width: 900px) {
