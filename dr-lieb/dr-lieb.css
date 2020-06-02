@@ -43,7 +43,8 @@
 }
 
 .dr-lieb__intro {
-  padding-top: 60px;
+  font-size: 1.25em;
+  font-weight: 600;
 }
 
 .dr-lieb__title {
@@ -53,12 +54,6 @@
   font-family: "captain-comic", sans-serif;
   font-style: italic;
   color: #000;
-}
-
-@media(min-width: 900px) {
-  .dr-lieb__subtitle {
-    padding: 20px 0 60px;
-  }
 }
 
 .dr-lieb__pull-qoute {
