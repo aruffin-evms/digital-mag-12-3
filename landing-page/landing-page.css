@@ -798,7 +798,7 @@ input[type="radio"]:checked {
 
 canvas {
   position: relative;
-  top: -260px;
+  top: -290px;
   z-index: -1;
   max-width: 1440px;
   height: 600px !important;
