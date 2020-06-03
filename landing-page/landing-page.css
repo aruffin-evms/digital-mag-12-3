@@ -71,7 +71,6 @@ a {
     bottom: 0;
     left: 0;
     width: 100%;
-    object-fit: cover;
 }
 @media (min-width: 900px){
   .landing-page__hero__video {
@@ -84,7 +83,7 @@ a {
   display:none;
 }
 
-@media(min-width: 900px) {
+@media(min-width: 600px) {
   .landing-page__president-cta {
     height: 150px;
     width: 150px;
@@ -403,17 +402,26 @@ a:hover {
 }
 
 .landing-page__more-stories__carousel__label__title {
-  font-size: 20px;
+  font-size: 1.25em;
   padding-top: 20px;
   color: #1f7f9b;
   transition: 0.5s ease;
+}
+
+@media (min-width: 768px) {
+.landing-page__more-stories__carousel__label__title {
+  font-size: 1.5em;
+  padding-top: 20px;
+  color: #1f7f9b;
+  transition: 0.5s ease;
+}
 }
 
 @media (min-width: 900px) {
   .landing-page__more-stories__carousel__label__title {
     margin-top: -60px;
     padding-top: 0;
-    font-size: 49px;
+    font-size: 2em;
   }
 }
 
@@ -433,7 +441,15 @@ a:hover {
   perspective: 900px;
   transform-style: preserve-3d;
 }
-
+@media (min-width: 768px) {
+  #slider {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 60px auto 45px;
+    perspective: 1440px;
+  }
+}
 @media (min-width: 900px) {
   #slider {
     position: relative;
