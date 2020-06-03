@@ -80,19 +80,44 @@ a {
 }
 
 .landing-page__president-cta {
-  display:none;
-}
+  background-color:#cc6434;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    transition: .5s all;
+    /*! right: -84%; */
+    /*! top: -20px; */
+    transform: scale(1);
+    top: 0;
+  }
 
 @media(min-width: 600px) {
   .landing-page__president-cta {
-    height: 150px;
-    width: 150px;
-    position: relative;
+    height: 50px;
+    width: 100%;
+    position: absolute;
     z-index: 10;
     transition: .5s all;
-    right: -84%;
-    top: -20px;
+    /*! right: -84%; */
+    /*! top: -20px; */
     transform: scale(1);
+    top: 0;
+  }
+}
+
+@media(min-width: 900px) {
+  .landing-page__president-cta {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    z-index: 10;
+    transition: .5s all;
+    right: 30px; 
+    /*! top: -20px; */
+    transform: scale(1);
+    top: -25px;
+    background-color: transparent;
   }
 }
 
@@ -106,10 +131,11 @@ a {
 .president-cta__label {
   position: relative;
   z-index: 15;
-  top: 35px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   color: white;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (min-width:900px){
@@ -128,6 +154,10 @@ a {
   width: 100%;
   position: relative;
   top: 25px;
+}
+
+.president-cta__image {
+    display: none;
 }
 
 .landing-page__hero__container{
@@ -820,5 +850,5 @@ canvas {
   z-index: -1;
   max-width: 1440px;
   height: 600px !important;
-}
   }
+}
