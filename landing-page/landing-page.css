@@ -669,7 +669,7 @@ input[type="radio"]:checked {
   height: auto;
   max-width: 1440px;
   margin: 0 auto;
-  max-height:900px;
+  max-height:400px;
   
 }
 @media (min-width: 768px) {
