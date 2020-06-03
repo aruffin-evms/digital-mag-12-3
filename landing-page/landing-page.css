@@ -30,6 +30,13 @@ tr, th, td {
 body {
   font-family: myriad-pro,myriad,sans-serif;
   overflow-x: hidden;
+  font-size: 16px;
+}
+
+@media(min-width: 900px){
+  body{
+    font-size: 18px;
+  }
 }
 
 img {
@@ -46,13 +53,6 @@ a {
 }
 
 .landing-page__hero {
-  /* height: 40vh;
-  position: relative; */
-  /* background-image: url(../12.3/assets/landing-page/hero-placeholder@2x.jpg);
-  background-size: cover;
-  background-position: 15%; */
-  /* height: 80vh; */
-  /* height: 100% !important; */
   min-height: 30vh;
   position: relative;
   overflow: hidden;
@@ -60,7 +60,6 @@ a {
 
 @media (min-width: 900px) {
   .landing-page__hero {
-    /* height: fit-content; */
     min-height: 80vh;
   }
 }
@@ -71,12 +70,37 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    /* opacity: 0.5; */
     width: 100%;
-    height: 100%;
-    min-height: 80vh;
     object-fit: cover;
 }
+@media (min-width: 900px){
+  .landing-page__hero__video {
+  height: 100%;
+  min-height: 80vh;
+  }
+}
+.landing-page__hero-banner {
+  color: #000;
+  position: relative;
+  bottom: -60px;
+  padding: 20px 0 90px;
+}
+
+@media (min-width: 900px){
+  .landing-page__hero-banner {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.landing-page__hero-banner__title {
+  font-size: 2em;
+  max-width: 90%;
+  line-height: 1em;
+}
+
 
 .landing-page__president-cta {
   height: 150px;
@@ -108,13 +132,20 @@ a {
   position: relative;
   z-index: 15;
   top: 35px;
-  /* left: 10px; */
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+@media (min-width:900px){
+  .president-cta__label {
+  position: relative;
+  z-index: 15;
+  top: 35px;
   width: auto;
   text-align: center;
   color: white;
 }
-.president-cta__image {
-  /* background-image: url(../12.3/assets/landing-page/President-tab-rust-bg.png); */
 }
 
 .landing-page__president-cta__point {
@@ -124,21 +155,23 @@ a {
   top: 25px;
 }
 
-.landing-page__hero__container {
-  height: 400px;
+.landing-page__hero__container{
   width: 100%;
-  margin-top: 83px;
-  text-align: center;
+  position: relative;
 }
 
 @media (min-width: 900px) {
   .landing-page__hero__container {
     height: 100%;
-    position: relative;
     z-index: 10;
-    top: 200px;
+    position: absolute;
+    bottom: 0;
   }
 }
+
+
+
+
 
 .landing-page__president-cta__title {
   color: white; 
@@ -153,49 +186,70 @@ a {
   text-decoration: underline;
 }
 
+
 .landing-page__hero-banner {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  padding: 50px 0;
-  text-align: center;
+  color: #000;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+  bottom: -60px;
+  padding: 20px 0 90px;
+  text-align: center;
+}
+
+@media(min-width: 900px){
+    .landing-page__hero-banner {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+    padding: 20px 0 45px;
+    }
 }
 
 .landing-page__hero-banner__title {
-  font-size: 18px;
-  max-width: 55%;
+  font-size: 2em;
+  max-width: 90%;
+  line-height: 1em;
   margin: 0 auto;
   padding-bottom: 30px;
+  font-family: "DM Serif Display", serif;
 }
 
 @media (min-width: 900px) {
   .landing-page__hero-banner__title {
-    font-size: 75px;
+    font-size: 4em;
+    max-width: 55%;
+    line-height: 1.25em;
   }
 }
 
 .landing-page__hero-banner__cta {
+
+  background-color: #000;
+  border: solid 2px #000;
+  padding: 10px 30px;
+  font-size: 1em;
   color: white;
-  background-color: inherit;
-  border: solid 2px white;
-  padding: 10px 40px;
-  font-size: 20px;
-  text-decoration: none;
-  transition: all .5s;
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px){
   .landing-page__hero-banner__cta {
-    font-size: 30px;
-  }
+    background-color: inherit;
+    border: solid 2px white;
+    padding: 10px 40px;
+    font-size: 1.25em;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+    }
+} 
 
   .landing-page__hero-banner__cta:hover {
-    color: white !important;
+    color: #000 !important;
     text-decoration: underline;
-    font-size: 33px;
+    font-size: 1.25em;
+    background-color: #fff;
   }
 }
 
