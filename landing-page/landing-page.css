@@ -251,7 +251,6 @@ a {
     font-size: 1.25em;
     background-color: #fff;
   }
-}
 
 a {
   transition: all .5s;
@@ -276,12 +275,6 @@ a:hover {
 .landing-page__in-this-issue__container {
   max-width: 1440px;
   margin: 0 auto;
-}
-
-@media (min-width: 900px) {
-  .landing-page__in-this-issue__container {
-    /* flex-direction: row; */
-  }
 }
 
 .landing-page__content-blocks {
@@ -507,25 +500,6 @@ input[type="radio"]:checked {
   transition: transform 400ms ease;
 }
 
-#slide1 {
-  /* background: tomato; */
-}
-
-#slide2 {
-  /* background: yellowgreen; */
-}
-
-#slide3 {
-  /* background: dodgerblue; */
-}
-
-/* #slide4 {
-  background: slateblue;
-}
-
-#slide5 {
-  background: violet;
-} */
 
 /* Active Slide */
 #s1:checked ~ #slide1,
@@ -690,11 +664,8 @@ input[type="radio"]:checked {
   }
 }
 
-.landing-page__culture {
-}
 .landing-page__culture__container {
   padding-top: 100px;
-  /* height: 800px; */
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -790,12 +761,6 @@ input[type="radio"]:checked {
 
 .landing-page__graduation__cta:hover {
   color: white;
-}
-#confetti {
-  
-  /* background-color: gray; */
-  /* z-index: -1; */
-  
 }
 
 canvas {
