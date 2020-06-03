@@ -138,7 +138,7 @@ tr, th, td {
 }
 
 .cultural-fair__divider--orange, .cultural-fair__divider--blue {
-  background-size: contain;
+  background-size: cover;
   min-height: 50px;
   width: 100vw;
   margin: 50px 0;
