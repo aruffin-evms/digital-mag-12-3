@@ -90,19 +90,24 @@ const secondParallaxImage = document.getElementById('secondParallaxImage')
 const secondParallaxCaption = document.getElementById('secondParallaxCaption')
 const lastParallaxCaption = document.getElementById('lastParallaxCaption')
 const lastParallaxImage = document.getElementById('lastParallaxImage')
+const firstParallaxImage = document.getElementById('firstParallaxImage')
+const firstParallaxCaption = document.getElementById('firstParallaxCaption')
+
 
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     console.log(entry)
-    if (entry.intersectionRatio > 0 && entry.target.id == 'lastParallaxImage') {
-      lastParallaxCaption.style.display = 'block'
+    
+    if (entry.intersectionRatio > 0 && entry.target.id == 'firstParallaxImage') {
+      firstParallaxCaption.style.display = 'block'
     } else {
-      lastParallaxCaption.style.display = 'none'
+      firstParallaxCaption.style.display = 'none'
     }
   });
 });
 
-observer.observe(lastParallaxImage);
+observer.observe(firstParallaxImage);
+
 
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -117,3 +122,16 @@ observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(secondParallaxImage);
+
+observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    console.log(entry)
+    if (entry.intersectionRatio > 0 && entry.target.id == 'lastParallaxImage') {
+      lastParallaxCaption.style.display = 'block'
+    } else {
+      lastParallaxCaption.style.display = 'none'
+    }
+  });
+});
+
+observer.observe(lastParallaxImage);
