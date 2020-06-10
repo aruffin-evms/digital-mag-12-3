@@ -446,12 +446,13 @@ a:focus {
   font-size: 0.95em;
   color: #616161;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  margin: 0 5px;
 }
 
 @media (min-width: 900px) {
   .story-template__image-w-caption__caption {
-    text-align: left;
+  margin:0;
   }
 }
 

@@ -50,17 +50,17 @@ const stories = {
   storyOne: {
     category: "",
     title: "From EVMS to the CDC",
-    link: "../chow/chow.html"
+    link: "https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/12_3/alumni_connections/"
   },
   storyTwo: {
     category: "",
     title: "Cellular detective work",
-    link: "../anca-dobrian/anca.html"
+    link: "https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/12_3/behind_the_bench_dobrian/"
   },
   storyThree: {
     category: "",
     title: "Hero without a cape",
-    link: "../dr-lieb/dr-lieb.html"
+    link: "https://www.evms.edu/about_evms/administrative_offices/marketing_communications/publications/12_3/offcampus/"
   }
 };
 
