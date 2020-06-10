@@ -58,9 +58,29 @@ a {
   overflow: hidden;
 }
 
+
+@media (min-width: 600px) {
+  .landing-page__hero {
+    min-height: 70vh;
+    top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page__hero {
+    min-height: 30vh;
+  }
+}
+
 @media (min-width: 900px) {
   .landing-page__hero {
-    min-height: 80vh;
+    min-height: 70vh;
+    top: -50px;
+  }
+}
+@media (min-width: 1200px) {
+  .landing-page__hero {
+    top: 0px;
   }
 }
 
@@ -74,8 +94,13 @@ a {
 }
 @media (min-width: 900px){
   .landing-page__hero__video {
-  height: 100%;
   min-height: 80vh;
+  }
+}
+
+@media (min-width: 1200px){
+  .landing-page__hero__video {
+  min-height: 85vh;
   }
 }
 
@@ -83,8 +108,8 @@ a {
   background-color:#cc6434;
     height: 30px;
     width: 100%;
-    position: absolute;
-    z-index: 10;
+    position: relative;
+    z-index: 1;
     transition: .5s all;
     /*! right: -84%; */
     /*! top: -20px; */
@@ -96,8 +121,8 @@ a {
   .landing-page__president-cta {
     height: 50px;
     width: 100%;
-    position: absolute;
-    z-index: 10;
+    position: relative;
+    z-index: 1;
     transition: .5s all;
     /*! right: -84%; */
     /*! top: -20px; */
@@ -111,7 +136,7 @@ a {
     height: 150px;
     width: 150px;
     position: absolute;
-    z-index: 10;
+    z-index: 12;
     transition: .5s all;
     right: 30px; 
     /*! top: -20px; */
@@ -142,7 +167,7 @@ a {
   .president-cta__label {
   position: relative;
   z-index: 15;
-  top: 35px;
+  top: 45px;
   width: auto;
   text-align: center;
   color: white;
@@ -159,6 +184,11 @@ a {
 .president-cta__image {
     display: none;
 }
+@media (min-width: 900px) {
+  .president-cta__image {
+    display: block;
+  }
+}
 
 .landing-page__hero__container{
   width: 100%;
@@ -167,10 +197,15 @@ a {
 
 @media (min-width: 900px) {
   .landing-page__hero__container {
-    height: 100%;
     z-index: 10;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-page__hero__container {
+    bottom: 0px;
   }
 }
 
@@ -202,9 +237,15 @@ a {
     position: absolute;
     z-index: 10;
     width: 100%;
-    bottom: 0;
-    padding: 20px 0 45px;
+    bottom: 10px;
+    padding: 10px 0 30px;
     }
+}
+
+@media(min-width: 1200px){
+  .landing-page__hero-banner {
+  bottom: 0px;
+  }
 }
 
 .landing-page__hero-banner__title {
@@ -218,9 +259,16 @@ a {
 
 @media (min-width: 900px) {
   .landing-page__hero-banner__title {
-    font-size: 4em;
+    font-size: 2.5em;
     max-width: 55%;
     line-height: 1.25em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-page__hero-banner__title {
+    font-size: 4em;
+    max-width: 50%;
   }
 }
 
@@ -354,8 +402,14 @@ a:hover {
 
 @media (min-width: 900px) {
   .landing-page__callout {
-    padding-top: 5%;
+    padding-top: 15px;
     font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-page__callout {
+    padding-top: 60px;
   }
 }
 
@@ -402,7 +456,7 @@ a:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 90px;
+    margin-top: 45px;
 }
 }
 
@@ -596,7 +650,7 @@ input[type="radio"]:checked {
 
 @media(min-width: 900px){ 
 .landing-page__ivf {
-  padding: 160px 0 0;
+  padding: 90px 0 0;
 }
 }
 
@@ -642,22 +696,22 @@ input[type="radio"]:checked {
 
 @media(min-width: 900px) {
   .landing-page__ivf__title {
-    font-size: 3em;
+    font-size: 2.75em;
     padding: 0;
   }
 }
 
 .landing-page__ivf__subtitle {
-  font-size: 1.25em;
+  font-size: 1.75em;
   line-height: 1.25em;
   padding-bottom: 30px;
 }
 
 @media(min-width: 900px) {
   .landing-page__ivf__subtitle {
-    font-size: 2em;
+    font-size: 1.75em;
     line-height: 1.5em;
-    padding-bottom: 0;
+    padding-top: 45px;
   }
 }
 
@@ -692,6 +746,13 @@ input[type="radio"]:checked {
 @media(min-width: 900px) {
   .landing-page__infograph {
     padding: 160px 0 0;
+    height:1200px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .landing-page__infograph {
+    height:1550px;
   }
 }
 
@@ -709,7 +770,7 @@ input[type="radio"]:checked {
 }
 @media (min-width: 900px) {
   .landing-page__infograph__container {
-    max-height: 1500px;
+    max-height: 995px;
   }
 }
 .landing-page__culture__container {
@@ -717,7 +778,7 @@ input[type="radio"]:checked {
 }
 @media(min-width:900px){
   .landing-page__culture__container {
-  padding-top: 100px;
+  padding-top: 60px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -770,9 +831,16 @@ input[type="radio"]:checked {
 @media(min-width: 900px) {
   .landing-page__graduation {
     height: 400px;
-    margin: 160px auto;
+    margin: 0 auto;
   }
 }
+
+@media(min-width: 1200px) {
+  .landing-page__graduation {
+    margin: 75px auto;
+  }
+}
+
 .landing-page__graduation__content {
   height: 90%;
   width: 90%;
