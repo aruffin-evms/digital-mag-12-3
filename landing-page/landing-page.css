@@ -139,9 +139,8 @@ a {
     z-index: 12;
     transition: .5s all;
     right: 30px; 
-    /*! top: -20px; */
     transform: scale(1);
-    top: -25px;
+    top: -30px;
     background-color: transparent;
   }
 }
