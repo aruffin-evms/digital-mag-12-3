@@ -127,19 +127,19 @@ svg {
   }
 }
 .street-health__background-image--one {
-  background-image: url(../12.3/assets/street-health/Lusher_200125_0323@2x.jpg);
+  background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/Lusher_200125_0323@2x.jpg);
   /* min-height: 90vh; */
   padding-top: 50%;
   padding-left: 54%;
 }
 
 .street-health__background-image--two {
-  background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
+  background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
   /* min-height: 90vh; */
 }
 
 .street-health__background-image--three {
-  background-image: url(../12.3/assets/street-health/Lusher_200125_0873@2x.jpg);
+  background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/Lusher_200125_0873@2x.jpg);
   /* min-height: 90vh; */
 }
 
@@ -193,7 +193,7 @@ svg {
   }
 
 .street-health__hero-video {
-  background-image: url(../12.3/assets/street-health/video-still-hero@2x.jpg);
+  background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/video-still-hero@2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -202,7 +202,7 @@ svg {
 }
 
 .street-health__intro {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(248, 248, 248, .95)), url(../12.3/assets/street-health/map-bg-white.svg);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(248, 248, 248, .95)), url(https://www.evms.edu/uploads/12.3/assets/street-health/map-bg-white.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -330,7 +330,7 @@ svg {
   background-color: #cc6434;
   height: auto;
   width: 100vw;
-  /* background-image: url(../12.3/assets/street-health/map-bg-rust.svg); */
+  /* background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/map-bg-rust.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -341,7 +341,7 @@ svg {
 @media(min-width: 900px) {
   .street-health__qoute {
     height: 500px;
-    background-image: url(../12.3/assets/street-health/map-bg-rust.svg);
+    background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/map-bg-rust.svg);
   }
 }
 
@@ -555,7 +555,7 @@ svg {
 .street-health__memoriam {
   height: 500px;
   width: 100vw;
-  background-image: url(../12.3/assets/street-health/map-bg-gray.svg);
+  background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/map-bg-gray.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
