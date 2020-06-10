@@ -164,6 +164,13 @@ tr, th, td {
   }
 }
 
+@media(min-width: 1200px) {
+  .cultural-fair__divider--blue {
+    min-height: 200px;
+    margin: 90px 0 60px;
+  }
+}
+
 .cultural-fair__divider--orange {
   background-image: url(https://www.evms.edu/uploads/12.3/assets/cultural-fair/Asset\ 6.svg);
 }
