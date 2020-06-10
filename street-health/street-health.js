@@ -49,39 +49,31 @@ const stories = {
 };
 
 slide1.addEventListener("click", function() {
-  // slideCategory.innerHTML = stories.storyOne.category;
   slideStoryTitle.innerHTML = stories.storyOne.title;
   link.href= stories.storyOne.link;
 });
 
 slide2.addEventListener("click", function() {
-  // slideCategory.innerHTML = stories.storyTwo.category;
   slideStoryTitle.innerHTML = stories.storyTwo.title;
   link.href= stories.storyTwo.link;
 });
 
 slide3.addEventListener("click", function() {
-  // slideCategory.innerHTML = stories.storyThree.category;
   slideStoryTitle.innerHTML = stories.storyThree.title;
   link.href= stories.storyThree.link;
 });
 
 slide4.addEventListener("click", function() {
-  // slideCategory.innerHTML = stories.storyOne.category;
   slideStoryTitle_2.innerHTML = stories.storyFour.title;
-  // link.href= stories.storyOne.link;
+  
 });
 
 slide5.addEventListener("click", function() {
-  // slideCategory.innerHTML = stories.storyTwo.category;
   slideStoryTitle_2.innerHTML = stories.storyFive.title;
-  // link.href= stories.storyTwo.link;
 });
 
 slide6.addEventListener("click", function() {
-  // slideCategory.innerHTML = stories.storyThree.category;
   slideStoryTitle_2.innerHTML = stories.storySix.title;
-  // link.href= stories.storyThree.link;
 });
 
 // todo: clean up - one observer for multiple elements
@@ -90,25 +82,32 @@ const secondParallaxImage = document.getElementById('secondParallaxImage')
 const secondParallaxCaption = document.getElementById('secondParallaxCaption')
 const lastParallaxCaption = document.getElementById('lastParallaxCaption')
 const lastParallaxImage = document.getElementById('lastParallaxImage')
+const firstParallaxImage = document.getElementById('firstParallaxImage')
+const firstParallaxCaption = document.getElementById('firstParallaxCaption')
 
+console.log(innerWidth)
+
+const mobile = innerWidth < 899;
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     console.log(entry)
-    if (entry.intersectionRatio > 0 && entry.target.id == 'lastParallaxImage') {
-      lastParallaxCaption.style.display = 'block'
+    
+    if (entry.intersectionRatio > 0 && entry.target.id == 'firstParallaxImage' && !mobile) {
+      firstParallaxCaption.style.display = 'block'
     } else {
-      lastParallaxCaption.style.display = 'none'
+      firstParallaxCaption.style.display = 'none'
     }
   });
 });
 
-observer.observe(lastParallaxImage);
+observer.observe(firstParallaxImage);
+
 
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     console.log(entry)
     
-    if (entry.intersectionRatio > 0 && entry.target.id == 'secondParallaxImage') {
+    if (entry.intersectionRatio > 0 && entry.target.id == 'secondParallaxImage' && !mobile) {
       secondParallaxCaption.style.display = 'block'
     } else {
       secondParallaxCaption.style.display = 'none'
@@ -117,3 +116,16 @@ observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(secondParallaxImage);
+
+observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    console.log(entry)
+    if (entry.intersectionRatio > 0 && entry.target.id == 'lastParallaxImage' && !mobile) {
+      lastParallaxCaption.style.display = 'block'
+    } else {
+      lastParallaxCaption.style.display = 'none'
+    }
+  });
+});
+
+observer.observe(lastParallaxImage);
