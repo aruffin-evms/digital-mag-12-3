@@ -840,6 +840,11 @@ input[type="radio"]:checked {
     margin: 75px auto;
   }
 }
+@media(min-width: 1500px) {
+  .landing-page__graduation {
+    margin: 210px auto;
+  }
+}
 
 .landing-page__graduation__content {
   height: 90%;
