@@ -65,15 +65,16 @@ svg {
 }
 
 .street-health__captions--mobile {
-  display: none;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px  0 0;
 }
+
 /* captions for mobile */
-@media(max-width: 899px) {
+@media(min-width: 900px) {
   .street-health__captions--mobile {
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px  0 0;
-    /* display: none; */
+    display: none;
   }
 }
 /* set z-index for sections */
@@ -94,36 +95,58 @@ svg {
   z-index: -1;
 }
 
-@media(max-width: 899px) {
+/* mobile 200; tablet 500; desktop 900 */
+.street-health__background-image--one,
+  .street-health__background-image--two,
+  .street-health__background-image--three {
+    min-height: 200px;
+    height: auto;
+  }
+
+@media(min-width: 600px) and (max-width: 899px) {
+  .street-health__background-image--one,
+  .street-health__background-image--two,
+  .street-health__background-image--three {
+    min-height: 500px;
+  }
+}
+
+/* @media(min-width: 900px) {
   .street-health__background-image--one,
   .street-health__background-image--two,
   .street-health__background-image--three {
     min-height: 200px !important;
-    height: auto;
+  }
+} */
+
+@media(min-width: 900px) {
+  .street-health__background-image--one,
+  .street-health__background-image--two,
+  .street-health__background-image--three {
+    min-height: 90vh;
   }
 }
-
 .street-health__background-image--one {
   background-image: url(../12.3/assets/street-health/Lusher_200125_0323@2x.jpg);
-  min-height: 90vh;
-  padding-top: 30%;
+  /* min-height: 90vh; */
+  padding-top: 50%;
+  padding-left: 54%;
 }
 
 .street-health__background-image--two {
   background-image: url(../12.3/assets/street-health/Lusher_200125_0496@2x.jpg);
-  min-height: 90vh;
+  /* min-height: 90vh; */
 }
 
 .street-health__background-image--three {
   background-image: url(../12.3/assets/street-health/Lusher_200125_0873@2x.jpg);
-  min-height: 90vh;
+  /* min-height: 90vh; */
 }
 
-@media(max-width: 899px) {
-  .street-health__background-image__caption {
-    position: relative !important;
-    display: none;
-  }
+
+.street-health__background-image__caption {
+  position: relative;
+  display: none;
 }
 
 @media(min-width: 900px) {
@@ -193,6 +216,17 @@ svg {
   padding-top: 30px;
 }
 
+.street-health__intro__subtitle {
+  text-align: center;
+  font-size: 22px;
+}
+
+@media(min-width: 600px) {
+  .street-health__intro__subtitle {
+    text-align: left;
+  }
+}
+
 @media(min-width: 900px) {
   .street-health__intro__subtitle {
     font-size: 40px;
@@ -200,12 +234,6 @@ svg {
   }
 }
 
-@media(max-width: 899px) {
-  .street-health__intro__subtitle {
-    text-align: center;
-    font-size: 22px;
-  }
-}
 
 @media(min-width: 900px) {
   .street-health__intro__title,
@@ -245,8 +273,16 @@ svg {
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  padding-bottom: 0 !important;
 }
 
+@media(min-width: 600px) {
+  .street-health__intro__title {
+    font-size: 70px !important;
+    text-align: left;
+    width: 90%;
+  }
+}
 @media(min-width: 900px) {
   .street-health__intro__title {
     font-size: 120px !important;
@@ -355,6 +391,12 @@ svg {
   margin-top: 20px;
 }
 
+@media(min-width: 600px) {
+  .street-health__qoute__copy {
+    width: 50%;
+  }
+}
+
 @media(min-width: 900px) {
   .street-health__qoute__copy {
     width: 45%;
@@ -401,11 +443,17 @@ svg {
 .landing-page__more-stories__carousel__labels {
   width: auto;
   position: relative;
-  top: 80px;
+  top: -22px;
   margin: 30px auto;
   text-align: center;
   animation: 1s fadeIn;
   max-width: 400px;
+}
+
+@media (min-width: 900px) {
+  .landing-page__more-stories__carousel__labels {
+    top: 80px;
+  }
 }
 
 .landing-page__more-stories__carousel__label__category {
@@ -432,7 +480,12 @@ svg {
   padding-top: 20px;
   color: rgb(109, 109, 109);
   transition: 0.5s ease;
- 
+}
+
+@media(min-width: 600px) {
+  .landing-page__more-stories__carousel__label__title {
+    padding-top: 40px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -532,17 +585,26 @@ svg {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  text-align: center;
 }
 
 @media(min-width: 900px) {
   .street-health__memoriam__image-wrapper {
     height: 400px;
     width: 400px;
+    text-align: unset;
   }
 }
 
 .street-health__memoriam__image {
   height: 100%;
+}
+
+@media(min-width: 900px) {
+  .street-health__memoriam__image {
+    height: 80%;
+    width: 80%;
+  }
 }
 
 .street-health__memoriam__copy {
@@ -716,13 +778,19 @@ input[type="radio"]:checked {
 /*! For Carousel - make less hacky */
 
 #slider2 {
-  /* position: relative; */
   width: 200px;
   height: 300px;
   margin: 50px auto;
   font-family: "Helvetica Neue", sans-serif;
   perspective: 900px;
   transform-style: preserve-3d;
+}
+
+@media(min-width: 600px) {
+  #slider2 {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 @media (min-width: 900px) {
