@@ -364,6 +364,12 @@ tr, th, td {
   width: 90%;
 }
 
+@media(min-width: 600px) {
+  .cultural-fair__intro-quote__source {
+    text-align: center;
+  }
+}
+
 @media(min-width: 900px) {
   .cultural-fair__intro-quote__source {
     padding-right: 38px;
