@@ -51,7 +51,7 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 80%;
-  font-family: "captain-comic", sans-serif;
+  font-family: "captain-comic", sans-serif !important;
   font-style: italic;
   color: #000;
 }

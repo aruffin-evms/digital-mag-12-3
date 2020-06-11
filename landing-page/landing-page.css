@@ -167,22 +167,17 @@ a {
   top: 50px;
 }
 
-@media(min-width: 600px) and (orientation: landscape) {
-  .landing-page__president-cta {
-    top: 57px !important;
-  }
-}
 @media(min-width: 600px) {
   .landing-page__president-cta {
-    top: 85px;
+    top: 90px;
   }
 }
 
-@media(min-width: 900px) and (orientation: landscape) {
+/* @media(min-width: 900px) and (orientation: landscape) {
   .landing-page__president-cta {
     top: 111px;
   }
-}
+} */
 
 @media (min-width: 900px){
   .landing-page__president-cta {
@@ -193,8 +188,14 @@ a {
     transition: 0.5s all;
     right: 30px;
     transform: scale(1);
-    top: 60px;
+    top: 107px;
     background-color: transparent;
+  }
+}
+
+@media(min-width: 1200px) {
+  .landing-page__president-cta {
+    top: 60px;
   }
 }
 
@@ -249,7 +250,7 @@ a {
 
 @media (min-width: 900px) {
   .landing-page__hero__container {
-    z-index: 10;
+    z-index:5;
     position: relative;
     bottom: 40px;
   }
@@ -308,11 +309,11 @@ a {
   font-family: "DM Serif Display", serif;
 }
 
-@media(min-width: 600px) and (orientation: landscape) {
+/* @media(min-width: 600px) and (orientation: landscape) {
   .landing-page__hero-banner__title {
     font-size: 1.5em !important;
   }
-}
+} */
 @media (min-width: 900px) {
   .landing-page__hero-banner__title {
     font-size: 2.5em;
@@ -323,8 +324,14 @@ a {
 
 @media (min-width: 1200px) {
   .landing-page__hero-banner__title {
-    font-size: 4em;
+    font-size: 3em;
     max-width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .landing-page__hero-banner__title {
+    font-size: 4em;
   }
 }
 
