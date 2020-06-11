@@ -180,11 +180,11 @@ a {
 
 @media(min-width: 900px) and (orientation: landscape) {
   .landing-page__president-cta {
-    top: 111px !important;
+    top: 111px;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px){
   .landing-page__president-cta {
     height: 150px;
     width: 150px;
