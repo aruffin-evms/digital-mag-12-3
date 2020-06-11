@@ -69,7 +69,7 @@ tr, th, td {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 40px !important;
   color: #c7531e !important;
   padding: 30px 0;
   font-family: "Overlock", cursive !important;
@@ -145,6 +145,12 @@ tr, th, td {
   background-repeat: no-repeat;
 }
 
+@media(min-width: 600px) {
+  .cultural-fair__divider--orange {
+    min-height: 100px;
+  }
+}
+
 @media(min-width: 900px) {
   .cultural-fair__divider--orange {
     min-height: 200px;
@@ -155,6 +161,12 @@ tr, th, td {
   .cultural-fair__divider--blue {
     min-height: 50px;
     margin: 30px 0 90px;
+  }
+
+  @media(min-width: 600px) {
+    .cultural-fair__divider--blue {
+      min-height: 100px;
+    }
   }
  
   @media(min-width: 900px) {
@@ -310,6 +322,11 @@ tr, th, td {
   margin: 0 auto;
 }
 
+@media(min-width: 600px) and (orientation: portrait) {
+  .cultural-fair__intro-quote__asset {
+    width: 25%;
+  }
+}
 @media(min-width: 900px) {
   .cultural-fair__intro-quote__asset {
    margin-right: 100px;
@@ -342,13 +359,20 @@ tr, th, td {
   font-family: "myriad-pro-condensed", sans-serif;
   color: #616161;
   font-size: 1em;
-  text-align: center;
+  text-align: right;
   padding-bottom: 30px;
+  width: 90%;
+}
+
+@media(min-width: 600px) {
+  .cultural-fair__intro-quote__source {
+    text-align: center;
+  }
 }
 
 @media(min-width: 900px) {
   .cultural-fair__intro-quote__source {
-    padding-right: 56px;
+    padding-right: 38px;
   }
 }
 
