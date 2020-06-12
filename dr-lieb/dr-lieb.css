@@ -51,7 +51,7 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 80%;
-  font-family: "captain-comic", sans-serif;
+  font-family: "captain-comic", sans-serif !important;
   font-style: italic;
   color: #000;
 }
@@ -154,6 +154,11 @@ display: flex;
   z-index: 5;
 }
 
+@media(min-width: 600px) {
+  .dr-lieb__graphic-caption__graphic {
+    height: 400px;
+  }
+}
 @media(max-width: 899px) {
   .dr-lieb__graphic-caption__graphic--horizontal {
     position: relative;
@@ -197,9 +202,16 @@ display: flex;
   top: -30px;
 }
 
+@media(min-width: 600px) {
+  .dr-lieb__graphic-caption__graphic--vertical {
+    top: -160px;
+  }
+}
+
 @media(min-width: 900px) {
   .dr-lieb__graphic-caption__graphic--vertical {
     right: 200px;
+    top: 0;
   }
 }
 
@@ -209,6 +221,27 @@ line-height: 22px;
   display: flex;
   justify-self: center;
   margin: 0 auto;
+}
+
+@media(min-width: 600px) {
+  .dr-lieb__graphic-caption__caption {
+    position: relative;
+    top: -60px
+  }
+}
+
+@media(min-width: 900px) {
+  .dr-lieb__graphic-caption__caption {
+    top: 0;
+  }
+
+}
+
+@media(min-width: 600px) and (orientation: landscape) {
+  .dr-lieb__graphic-caption__caption {
+    font-size: 22px !important;
+    line-height: 24px !important;
+  }
 }
 
 @media(min-width: 900px) {

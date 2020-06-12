@@ -339,7 +339,7 @@ svg {
 
 @media(min-width: 900px) {
   .street-health__qoute {
-    height: 500px;
+    height: 720px;
     background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/map-bg-rust.svg);
   }
 }
@@ -352,7 +352,7 @@ svg {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
-  padding: 100px 0;
+  padding: 80px 0 110px;
 }
 
 @media(min-width: 1800px) {
@@ -556,7 +556,7 @@ svg {
 .street-health__memoriam {
   height: 700px;
   width: 100vw;
-  background-image: url(../12.3/assets/street-health/map-bg-gray.svg);
+  background-image: url(https://www.evms.edu/uploads/12.3/assets/street-health/map-bg-gray.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
