@@ -195,7 +195,13 @@ a {
 
 @media(min-width: 1200px) {
   .landing-page__president-cta {
-    top: 60px;
+    top: 20px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .landing-page__president-cta {
+    top: -30px;
   }
 }
 
