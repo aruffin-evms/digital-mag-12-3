@@ -66,8 +66,8 @@ const stories = {
 
 const infograph = document.getElementById('infograph')
 
-observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+observer = new IntersectionObserver(function() {
+  entries.forEach(function() {
     if (entry.intersectionRatio > 0) {
       console.log('in the view');
       if(firstPageLoad){
